@@ -1,0 +1,19 @@
+[
+  {
+    "archive": "/mnt/d/Desktop/\u7aef\u5230\u7aef\u81ea\u52a8\u9a7e\u9a76\u5f00\u6e90\u6a21\u578b\u8c03\u7814/.thinktwice-runtime/assets/mmcv-v1.7.0.tar.gz",
+    "sha256_local": "1665c6a9c7ffd19c0786451e38fd6385784f65113812a7dacb8e34f783184922",
+    "destination": "/opt/thinktwice/src/relink-mmcv",
+    "members": 1117
+  },
+  {
+    "archive": "/mnt/d/Desktop/\u7aef\u5230\u7aef\u81ea\u52a8\u9a7e\u9a76\u5f00\u6e90\u6a21\u578b\u8c03\u7814/.thinktwice-runtime/assets/torchvision-v0.13.1.tar.gz",
+    "sha256_local": "c32fab734e62c7744dadeb82f7510ff58cc3bca1189d17b16aa99b08afc42249",
+    "destination": "/opt/thinktwice/src/relink-vision",
+    "members": 855
+  },
+  {
+    "source": "/mnt/d/Desktop/\u7aef\u5230\u7aef\u81ea\u52a8\u9a7e\u9a76\u5f00\u6e90\u6a21\u578b\u8c03\u7814/ThinkTwice/open_loop_training",
+    "destination": "/opt/thinktwice/src/relink-voxel",
+    "scope": "unmodified official setup and ops source copy"
+  }
+]

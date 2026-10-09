@@ -1,0 +1,19 @@
+{
+  "scope": "CARLA API, Town05, synchronous clock only",
+  "pass": false,
+  "egg": "/opt/thinktwice/carla-0.9.10.1/PythonAPI/carla/dist/carla-0.9.10-py3.7-linux-x86_64.egg",
+  "client_version": "784d9b9f",
+  "server_version": "784d9b9f",
+  "available_maps": [
+    "/Game/Carla/Maps/Town02",
+    "/Game/Carla/Maps/Town03",
+    "/Game/Carla/Maps/Town05",
+    "/Game/Carla/Maps/Town01",
+    "/Game/Carla/Maps/Town10HD",
+    "/Game/Carla/Maps/Town04",
+    "/Game/Carla/Maps/Town06",
+    "/Game/Carla/Maps/Town07"
+  ],
+  "map": "Town05",
+  "error": "Traceback (most recent call last):\n  File \"ThinkTwice/docs/reproduction/env-agent/scripts/probe_carla_sync.py\", line 30, in <module>\n    original = world.get_settings()\nRuntimeError: time-out of 120000ms while waiting for the simulator, make sure the simulator is ready and connected to 127.0.0.1:22123\n"
+}

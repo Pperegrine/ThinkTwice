@@ -1,0 +1,48 @@
+{
+  "scope": "user-selected short closed-loop smoke, not full route completion",
+  "minimum_inferences": 200,
+  "pass": true,
+  "started": 1791553294.1668458,
+  "own_evaluator_pid": 40,
+  "inference_count_observed": 200,
+  "last_control_step": 230,
+  "readonly_live_probe": {
+    "map": "Town05",
+    "frame": 352,
+    "elapsed_seconds": 34.43924521282315,
+    "fixed_delta_seconds": 0.05000000074505806,
+    "ego_actor_id": 200,
+    "location": [
+      -79.9109878540039,
+      -133.35585021972656,
+      0.08882132917642593
+    ],
+    "speed_m_s": 3.258741601658609,
+    "vehicle_actor_count": 123
+  },
+  "ego_displacement_from_route_start_m": 27.30434356814014,
+  "termination": {
+    "reason": "user_selected_short_smoke_threshold_reached",
+    "minimum_inferences": 200,
+    "observed_before_signal": 200,
+    "signal": "SIGINT to own original evaluator handler",
+    "evaluator_pid": 40,
+    "wall_time": 1791553776.9770503,
+    "full_route_completion_requested": false
+  },
+  "inference_count": 203,
+  "controls_count": 234,
+  "six_levels_all_finite": true,
+  "controls_all_valid": true,
+  "inference_steps_contiguous": true,
+  "failures": [],
+  "raw_full_route_statuses": [
+    "Failed"
+  ],
+  "raw_route_progress_percent": [
+    2.339751159903489
+  ],
+  "raw_evaluator_returncode": 0,
+  "full_route_completed": false,
+  "finished": 1791553787.0276372
+}

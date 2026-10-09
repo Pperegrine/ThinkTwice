@@ -1,0 +1,19 @@
+{
+  "scope": "official model/strict checkpoint/GPU placement; not forward inference",
+  "pass": true,
+  "torch": {
+    "version": "1.12.1",
+    "path": "/opt/thinktwice/candidate-site/torch/__init__.py",
+    "abi": true
+  },
+  "refine_num": 5,
+  "checkpoint_keys": 1344,
+  "model_keys": 1344,
+  "missing": [],
+  "unexpected": [],
+  "shape_mismatches": {},
+  "parameter_devices": [
+    "cuda:0"
+  ],
+  "parameter_count": 128232121
+}

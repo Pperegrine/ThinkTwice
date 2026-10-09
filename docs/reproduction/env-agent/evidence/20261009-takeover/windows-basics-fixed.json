@@ -1,0 +1,44 @@
+{
+  "python": "3.7.1 (default, Oct 28 2018, 08:39:03) [MSC v.1912 64 bit (AMD64)]",
+  "executable": "C:\\Users\\Peregrine\\miniconda3\\envs\\tt-audit-py37\\python.exe",
+  "stages": {
+    "cpu_tensor_numpy": {
+      "pass": true,
+      "seconds": 1.1154087000000001,
+      "result": {
+        "numpy": "1.20.3",
+        "numpy_file": "D:\\Desktop\\\u7aef\u5230\u7aef\u81ea\u52a8\u9a7e\u9a76\u5f00\u6e90\u6a21\u578b\u8c03\u7814\\.thinktwice-runtime\\win-py37-site\\numpy\\__init__.py",
+        "torch": "1.12.1+cu113",
+        "shape": [
+          3,
+          4
+        ],
+        "roundtrip": true
+      },
+      "warnings": []
+    },
+    "cuda_tensor_numpy": {
+      "pass": true,
+      "seconds": 0.16848180000000013,
+      "result": {
+        "roundtrip": true,
+        "device": "NVIDIA GeForce RTX 5080 Laptop GPU",
+        "cuda": "11.3",
+        "arch": [
+          "sm_37",
+          "sm_50",
+          "sm_60",
+          "sm_61",
+          "sm_70",
+          "sm_75",
+          "sm_80",
+          "sm_86",
+          "compute_37"
+        ]
+      },
+      "warnings": [
+        "\nNVIDIA GeForce RTX 5080 Laptop GPU with CUDA capability sm_120 is not compatible with the current PyTorch installation.\nThe current PyTorch install supports CUDA capabilities sm_37 sm_50 sm_60 sm_61 sm_70 sm_75 sm_80 sm_86 compute_37.\nIf you want to use the NVIDIA GeForce RTX 5080 Laptop GPU GPU with PyTorch, please check the instructions at https://pytorch.org/get-started/locally/\n"
+      ]
+    }
+  }
+}

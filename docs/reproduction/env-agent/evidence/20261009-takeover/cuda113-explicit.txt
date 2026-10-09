@@ -1,0 +1,16 @@
+# This file may be used to create an environment using:
+# $ conda create --name <env> --file <this file>
+# platform: linux-64
+@EXPLICIT
+https://conda.anaconda.org/nvidia/label/cuda-11.3.1/linux-64/cuda-cudart-11.3.109-hfb95d0c_0.tar.bz2
+https://conda.anaconda.org/nvidia/label/cuda-11.3.1/linux-64/cuda-cuobjdump-11.3.122-hbf6ec6b_0.tar.bz2
+https://conda.anaconda.org/nvidia/label/cuda-11.3.1/linux-64/cuda-nvcc-11.3.122-h4814707_0.tar.bz2
+https://conda.anaconda.org/nvidia/label/cuda-11.3.1/linux-64/cuda-nvrtc-11.3.122-h1aa17d8_0.tar.bz2
+https://conda.anaconda.org/nvidia/label/cuda-11.3.1/linux-64/cuda-nvtx-11.3.109-h4ec7630_0.tar.bz2
+https://conda.anaconda.org/nvidia/label/cuda-11.3.1/linux-64/libcublas-11.5.1.109-h0fd73e7_0.tar.bz2
+https://conda.anaconda.org/nvidia/label/cuda-11.3.1/linux-64/libcufft-10.4.2.109-h2344711_0.tar.bz2
+https://conda.anaconda.org/nvidia/label/cuda-11.3.1/linux-64/libcurand-10.2.4.109-h0189693_0.tar.bz2
+https://conda.anaconda.org/nvidia/label/cuda-11.3.1/linux-64/libcusolver-11.1.2.109-h1e009e5_0.tar.bz2
+https://conda.anaconda.org/nvidia/label/cuda-11.3.1/linux-64/libcusparse-11.6.0.109-hf5bfba9_0.tar.bz2
+https://conda.anaconda.org/nvidia/label/cuda-11.3.1/linux-64/cuda-thrust-11.3.109-he8b717c_0.tar.bz2
+https://conda.anaconda.org/nvidia/label/cuda-11.3.1/linux-64/cuda-libraries-dev-11.3.1-h712c49d_0.tar.bz2

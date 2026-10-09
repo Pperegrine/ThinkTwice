@@ -1,0 +1,25 @@
+{
+  "scope": "Prepared only; no inference or route run",
+  "evaluator_original_sha256": "896bf964f5a23749fa65238091a6c287d7a6107e7cccf87d79251438a83ae140",
+  "evaluator_overlay_sha256": "5d5920e87de69b86e3af89479fc436d014d56fe8f3541f4b56282ab8a87c38b2",
+  "route_source": "/mnt/d/Desktop/\u7aef\u5230\u7aef\u81ea\u52a8\u9a7e\u9a76\u5f00\u6e90\u6a21\u578b\u8c03\u7814/ThinkTwice/leaderboard/data/routes_for_evaluation/routes_town05_long.xml",
+  "selected_original_route": {
+    "id": "16",
+    "town": "Town05"
+  },
+  "route_count": 1,
+  "route_sha256": "1475a447c063a3e34b2d84311fc6270e5efb09e9f5c652dbe0fd2cd6c70e4e4e",
+  "deployment_changes": [
+    "CARLA process-local graphics launcher",
+    "own process-group cleanup only",
+    "bounded fresh-client RPC readiness before original client",
+    "initialization tick wall-clock timeout120s, physics delta unchanged",
+    "skip destructor duplicate RPC only after successful route cleanup; reset per route"
+  ],
+  "diagnostic_wrapper_sha256": "b1aa24eeaf7c0f2f5e4a67d34f09c83b45c7583ec89ca79bccaa7c598acb6b1b",
+  "diagnostic_changes": [
+    "observer subclass calls original setup/run_step/forward; returns values unchanged",
+    "save first real batch/output and record all six prediction levels plus controls"
+  ],
+  "model_agent_control_changes": []
+}

@@ -1,0 +1,8 @@
+wsl: 检测到 localhost 代理配置，但未镜像到 WSL。NAT 模式下的 WSL 不支持 localhost 代理。
+c8a8982f9143a6e9d93e1a1f8ad0029944e9b9959494967210e4c823a0f8f75e  /opt/thinktwice/cudnn832-runtime/lib/libcudnn.so.8
+04e93f93f9f822a120d2d16789d39215ed84dc78a09e0ec1f758db9f4ea1c780  /opt/thinktwice/cudnn832-runtime/lib/libcudnn_adv_infer.so.8
+901eed6025dc2d8d52998b5cbfbdc1ad37c9f650ea65fdaa88c674d4184d4035  /opt/thinktwice/cudnn832-runtime/lib/libcudnn_adv_train.so.8
+f86a87a7aa8b26efad4d8b0dabf6fb376df9db10dd6f581742812e04aa64a3dc  /opt/thinktwice/cudnn832-runtime/lib/libcudnn_cnn_infer.so.8
+ea8fff26e8d352e4ac3e8d16f675030a0c7c70d7de4f97889cfc49f79f3ac4ed  /opt/thinktwice/cudnn832-runtime/lib/libcudnn_cnn_train.so.8
+00bc8400661162a3a82918c95020891e5d2706435935e73c5132c7f88728f560  /opt/thinktwice/cudnn832-runtime/lib/libcudnn_ops_infer.so.8
+cbab1c4b71e0268e2b428bb6a10758dc6956f9ba7ffaea425454aee4b905d1ca  /opt/thinktwice/cudnn832-runtime/lib/libcudnn_ops_train.so.8

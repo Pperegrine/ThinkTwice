@@ -1,0 +1,17 @@
+{
+  "op": "voxel",
+  "torch": "1.12.1",
+  "torch_file": "/opt/thinktwice/candidate-site/torch/__init__.py",
+  "cuda": "11.3",
+  "pass": true,
+  "extension_path": "/opt/thinktwice/voxel-candidate/ops/voxel_pooling/voxel_pooling_ext.cpython-37m-x86_64-linux-gnu.so",
+  "wrapper_path": "/opt/thinktwice/voxel-candidate/ops/voxel_pooling/voxel_pooling.py",
+  "shape": [
+    1,
+    2,
+    2,
+    2
+  ],
+  "finite": true,
+  "seconds": 3.550636835000091
+}

@@ -1,0 +1,29 @@
+{
+  "source_directory": "D:\\Download",
+  "assets": [
+    {
+      "filename": "CARLA_0.9.10.1.tar.gz",
+      "expected_bytes": 3956990664,
+      "source_url": "https://carla-releases.s3.us-east-005.backblazeb2.com/Linux/CARLA_0.9.10.1.tar.gz",
+      "status": "size_and_copy_hash_verified",
+      "bytes": 3956990664,
+      "sha256": "c441c35528c767962e781000ab61600aaa1fa0c2d1bd148effccdb9bab38d583",
+      "hash_scope": "local identity only; no official published checksum claimed",
+      "original_path": "D:\\Download\\CARLA_0.9.10.1.tar.gz",
+      "isolated_path": "D:\\Desktop\\\u7aef\u5230\u7aef\u81ea\u52a8\u9a7e\u9a76\u5f00\u6e90\u6a21\u578b\u8c03\u7814\\.thinktwice-runtime\\assets\\carla-0.9.10.1-release\\CARLA_0.9.10.1.tar.gz"
+    },
+    {
+      "filename": "AdditionalMaps_0.9.10.1.tar.gz",
+      "expected_bytes": 1823090196,
+      "source_url": "https://carla-releases.s3.us-east-005.backblazeb2.com/Linux/AdditionalMaps_0.9.10.1.tar.gz",
+      "status": "size_and_copy_hash_verified",
+      "bytes": 1823090196,
+      "sha256": "b64b1d7b92090de99913c7a221984d54c4c462275b4d727e8cd4a20dc529646c",
+      "hash_scope": "local identity only; no official published checksum claimed",
+      "original_path": "D:\\Download\\AdditionalMaps_0.9.10.1.tar.gz",
+      "isolated_path": "D:\\Desktop\\\u7aef\u5230\u7aef\u81ea\u52a8\u9a7e\u9a76\u5f00\u6e90\u6a21\u578b\u8c03\u7814\\.thinktwice-runtime\\assets\\carla-0.9.10.1-release\\AdditionalMaps_0.9.10.1.tar.gz"
+    }
+  ],
+  "space_free_before": 183337361408,
+  "space_free_after": 179380367360
+}

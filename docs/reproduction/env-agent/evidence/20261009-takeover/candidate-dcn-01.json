@@ -1,0 +1,17 @@
+{
+  "op": "dcn",
+  "torch": "1.12.1",
+  "torch_file": "/opt/thinktwice/candidate-site/torch/__init__.py",
+  "cuda": "11.3",
+  "pass": true,
+  "extension_path": "/opt/thinktwice/candidate-site/mmcv/_ext.cpython-37m-x86_64-linux-gnu.so",
+  "scope": "grouped DCN with zero offsets, numerical equality to grouped convolution",
+  "shape": [
+    1,
+    8,
+    12,
+    12
+  ],
+  "finite": true,
+  "seconds": 9.628253633999975
+}

@@ -1,0 +1,13 @@
+{
+  "op": "spconv",
+  "torch": "1.12.1+cu113",
+  "cuda": "11.3",
+  "pass": true,
+  "spconv": "2.3.6",
+  "shape": [
+    3,
+    4
+  ],
+  "finite": true,
+  "seconds": 193.42332997699998
+}

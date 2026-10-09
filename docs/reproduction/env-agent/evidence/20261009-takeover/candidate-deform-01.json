@@ -1,0 +1,15 @@
+{
+  "op": "deform",
+  "torch": "1.12.1",
+  "torch_file": "/opt/thinktwice/candidate-site/torch/__init__.py",
+  "cuda": "11.3",
+  "pass": true,
+  "extension_path": "/opt/thinktwice/candidate-site/mmcv/_ext.cpython-37m-x86_64-linux-gnu.so",
+  "shape": [
+    1,
+    3,
+    8
+  ],
+  "finite": true,
+  "seconds": 20.71969626300006
+}

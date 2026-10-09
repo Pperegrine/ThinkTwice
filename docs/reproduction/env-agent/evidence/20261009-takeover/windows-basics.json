@@ -1,0 +1,21 @@
+{
+  "python": "3.7.1 (default, Oct 28 2018, 08:39:03) [MSC v.1912 64 bit (AMD64)]",
+  "executable": "C:\\Users\\Peregrine\\miniconda3\\envs\\tt-audit-py37\\python.exe",
+  "stages": {
+    "cpu_tensor_numpy": {
+      "pass": false,
+      "seconds": 0.00030180000000000137,
+      "error": "Traceback (most recent call last):\n  File \"ThinkTwice/docs/reproduction/env-agent/scripts/probe_basics.py\", line 15, in stage\n    result = fn()\n  File \"ThinkTwice/docs/reproduction/env-agent/scripts/probe_basics.py\", line 26, in cpu_bridge\n    import numpy as np\nModuleNotFoundError: No module named 'numpy'\n"
+    },
+    "cuda_tensor_numpy": {
+      "pass": false,
+      "seconds": 0.0005949999999999983,
+      "error": "Traceback (most recent call last):\n  File \"ThinkTwice/docs/reproduction/env-agent/scripts/probe_basics.py\", line 15, in stage\n    result = fn()\n  File \"ThinkTwice/docs/reproduction/env-agent/scripts/probe_basics.py\", line 38, in cuda_bridge\n    import numpy as np\nModuleNotFoundError: No module named 'numpy'\n"
+    },
+    "cuda_finite_sync_bench": {
+      "pass": false,
+      "seconds": 703.4962144,
+      "error": "Traceback (most recent call last):\n  File \"ThinkTwice/docs/reproduction/env-agent/scripts/probe_basics.py\", line 15, in stage\n    result = fn()\n  File \"ThinkTwice/docs/reproduction/env-agent/scripts/probe_basics.py\", line 60, in cuda_bench\n    a,cold_rng=timed(lambda: torch.randn(512,512,device='cuda'))\n  File \"ThinkTwice/docs/reproduction/env-agent/scripts/probe_basics.py\", line 57, in timed\n    import numpy as np\nModuleNotFoundError: No module named 'numpy'\n"
+    }
+  }
+}

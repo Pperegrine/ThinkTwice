@@ -1,0 +1,27 @@
+--- Mesa24.0.5 original d3d12_nir_passes.c
++++ /opt/thinktwice/src/mesa-24.0.5/src/gallium/drivers/d3d12/d3d12_nir_passes.c
+@@ -652,8 +652,14 @@
+       return;
+ 
+    nir_deref_instr *deref = nir_build_deref_array(b, nir_build_deref_var(b, varyings[var->data.location]), index);
++   /* Retain array/struct element indices below the original output root. */
++   nir_deref_path path;
++   nir_deref_path_init(&path, nir_src_as_deref(intr->src[0]), NULL);
++   for (unsigned i = 1; path.path[i]; i++)
++      deref = nir_build_deref_follower(b, deref, path.path[i]);
++   nir_deref_path_finish(&path);
+    nir_def *value = intr->src[1].ssa;
+-   nir_store_deref(b, deref, value, 0xf);
++   nir_store_deref(b, deref, value, nir_intrinsic_write_mask(intr));
+    nir_instr_remove(&intr->instr);
+ }
+ 
+@@ -773,6 +779,8 @@
+    }
+ 
+    nir_metadata_preserve(impl, nir_metadata_none);
++   /* Triangle-strip emission creates aggregate output copies. */
++   NIR_PASS_V(shader, nir_split_var_copies);
+    NIR_PASS_V(shader, nir_lower_var_copies);
+ }
+ 

@@ -1,0 +1,13 @@
+{
+  "scope": "local deployment driver fix; not claimed upstream",
+  "source": "/opt/thinktwice/src/mesa-24.0.5/src/gallium/drivers/d3d12/d3d12_nir_passes.c",
+  "backup": "/opt/thinktwice/src/mesa-24.0.5/src/gallium/drivers/d3d12/d3d12_nir_passes.c.before-triangle-copy-fix",
+  "source_before_sha256": "d0846e4c7bb85cdde574dbab3d4895461f2c886025d9941b472195905199197c",
+  "source_after_sha256": "9b897eba51c066783542f365521dadab4ef0b05272ba20e23fb8a3bcd669c3aa",
+  "library": "/opt/thinktwice/mesa24-triangle-fix/lib/dri/swrast_dri.so",
+  "bytes": 111511752,
+  "sha256": "b5606e005748198cc5f048acc4d80f01d68cbd3154ddc216cfddfcf479f196b5",
+  "original_installed_release_and_debug_preserved": true,
+  "model_agent_control_changes": [],
+  "runtime_validation": "pending"
+}

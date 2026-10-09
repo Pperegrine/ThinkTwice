@@ -1,0 +1,20 @@
+[
+  {
+    "path": "/opt/thinktwice/src/mmcv-1.7.0/dist/mmcv_full-1.7.0-cp37-cp37m-linux_x86_64.whl",
+    "bytes": 29933890,
+    "sha256_local": "66b3dbbface3bb6297a9d43e97241996c93d9b9e0a57a4e9528b320bf42fba06"
+  },
+  {
+    "path": "/opt/thinktwice/src/mmdetection3d-47285b3f1e9dba358e98fcd12e523cfd0769c876/dist/mmdet3d-1.0.0rc6-py3-none-any.whl",
+    "bytes": 837901,
+    "sha256_local": "672c37537c60ec39441ebf4e0da2e84c0fc9023a192510d2a3abd86e9d0f9f5d"
+  },
+  {
+    "path": "/opt/thinktwice/candidate-site/mmcv/_ext.cpython-37m-x86_64-linux-gnu.so",
+    "bytes": 90428760,
+    "sha256_local": "44f637337f33faa10d37802644e4245463d8d1ebcf41ef1ad1e3a627404b69ca",
+    "cuobjdump_returncode": 0,
+    "ptx_listing": "/mnt/d/Desktop/\u7aef\u5230\u7aef\u81ea\u52a8\u9a7e\u9a76\u5f00\u6e90\u6a21\u578b\u8c03\u7814/ThinkTwice/docs/reproduction/env-agent/evidence/20261009-takeover/mmcv-candidate-cuobjdump-list-ptx.txt",
+    "scope": "PTX presence only; actual CUDA operator tests still required"
+  }
+]

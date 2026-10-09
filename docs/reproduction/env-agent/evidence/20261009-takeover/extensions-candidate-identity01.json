@@ -1,0 +1,116 @@
+{
+  "pass": true,
+  "scope": "binary/import identity only, not numerical operator execution",
+  "torch": {
+    "version": "1.12.1",
+    "path": "/opt/thinktwice/candidate-site/torch/__init__.py",
+    "cuda": "11.3",
+    "cudnn": 8302,
+    "abi": true
+  },
+  "extensions": [
+    {
+      "name": "mmcv._ext",
+      "path": "/opt/thinktwice/candidate-site/mmcv/_ext.cpython-37m-x86_64-linux-gnu.so",
+      "bytes": 88510320,
+      "sha256_local": "6a4fefc4ee3b18479f787932b9ecb3a3f55d715e7ebc52c01b69c7f918b821aa",
+      "readelf_returncode": 0,
+      "needed": [
+        "0x0000000000000001 (NEEDED)             Shared library: [libc10.so]",
+        "0x0000000000000001 (NEEDED)             Shared library: [libtorch.so]",
+        "0x0000000000000001 (NEEDED)             Shared library: [libtorch_cpu.so]",
+        "0x0000000000000001 (NEEDED)             Shared library: [libtorch_python.so]",
+        "0x0000000000000001 (NEEDED)             Shared library: [libcudart.so.11.0]",
+        "0x0000000000000001 (NEEDED)             Shared library: [libc10_cuda.so]",
+        "0x0000000000000001 (NEEDED)             Shared library: [libtorch_cuda.so]",
+        "0x0000000000000001 (NEEDED)             Shared library: [libstdc++.so.6]",
+        "0x0000000000000001 (NEEDED)             Shared library: [libm.so.6]",
+        "0x0000000000000001 (NEEDED)             Shared library: [libgcc_s.so.1]",
+        "0x0000000000000001 (NEEDED)             Shared library: [libpthread.so.0]",
+        "0x0000000000000001 (NEEDED)             Shared library: [libc.so.6]"
+      ]
+    },
+    {
+      "name": "torchvision._C",
+      "path": "/opt/thinktwice/candidate-site/torchvision/_C.so",
+      "bytes": 45790544,
+      "sha256_local": "0d5270491e2bbfb59eab29dfc820b141476dca231862eb0361ceb215b93bd61e",
+      "readelf_returncode": 0,
+      "needed": [
+        "0x0000000000000001 (NEEDED)             Shared library: [libc10.so]",
+        "0x0000000000000001 (NEEDED)             Shared library: [libtorch.so]",
+        "0x0000000000000001 (NEEDED)             Shared library: [libtorch_cpu.so]",
+        "0x0000000000000001 (NEEDED)             Shared library: [libtorch_python.so]",
+        "0x0000000000000001 (NEEDED)             Shared library: [libcudart.so.11.0]",
+        "0x0000000000000001 (NEEDED)             Shared library: [libc10_cuda.so]",
+        "0x0000000000000001 (NEEDED)             Shared library: [libtorch_cuda.so]",
+        "0x0000000000000001 (NEEDED)             Shared library: [libstdc++.so.6]",
+        "0x0000000000000001 (NEEDED)             Shared library: [libm.so.6]",
+        "0x0000000000000001 (NEEDED)             Shared library: [libgcc_s.so.1]",
+        "0x0000000000000001 (NEEDED)             Shared library: [libpthread.so.0]",
+        "0x0000000000000001 (NEEDED)             Shared library: [libc.so.6]",
+        "0x0000000000000001 (NEEDED)             Shared library: [ld-linux-x86-64.so.2]"
+      ]
+    },
+    {
+      "name": "spconv.core_cc",
+      "path": "/opt/thinktwice/conda/lib/python3.7/site-packages/spconv/core_cc.cpython-37m-x86_64-linux-gnu.so",
+      "bytes": 276300041,
+      "sha256_local": "592cc0a3b04690582f9072da0fe3b787d13ba0f8e30fad8df7f9e0e671820057",
+      "readelf_returncode": 0,
+      "needed": [
+        "0x0000000000000001 (NEEDED)             Shared library: [libcudart-a7b20f20.so.11.3.109]",
+        "0x0000000000000001 (NEEDED)             Shared library: [libstdc++.so.6]",
+        "0x0000000000000001 (NEEDED)             Shared library: [libm.so.6]",
+        "0x0000000000000001 (NEEDED)             Shared library: [libgcc_s.so.1]",
+        "0x0000000000000001 (NEEDED)             Shared library: [libc.so.6]",
+        "0x0000000000000001 (NEEDED)             Shared library: [ld-linux-x86-64.so.2]"
+      ]
+    },
+    {
+      "name": "ops.voxel_pooling.voxel_pooling_ext",
+      "path": "/opt/thinktwice/voxel-candidate/ops/voxel_pooling/voxel_pooling_ext.cpython-37m-x86_64-linux-gnu.so",
+      "bytes": 5295600,
+      "sha256_local": "4059dcadf283fa4778ced39bc6ec3685e4ffdeaf988b762928474c3366699b4f",
+      "readelf_returncode": 0,
+      "needed": [
+        "0x0000000000000001 (NEEDED)             Shared library: [libc10.so]",
+        "0x0000000000000001 (NEEDED)             Shared library: [libtorch.so]",
+        "0x0000000000000001 (NEEDED)             Shared library: [libtorch_cpu.so]",
+        "0x0000000000000001 (NEEDED)             Shared library: [libtorch_python.so]",
+        "0x0000000000000001 (NEEDED)             Shared library: [libcudart.so.11.0]",
+        "0x0000000000000001 (NEEDED)             Shared library: [libc10_cuda.so]",
+        "0x0000000000000001 (NEEDED)             Shared library: [libtorch_cuda.so]",
+        "0x0000000000000001 (NEEDED)             Shared library: [libstdc++.so.6]",
+        "0x0000000000000001 (NEEDED)             Shared library: [libm.so.6]",
+        "0x0000000000000001 (NEEDED)             Shared library: [libgcc_s.so.1]",
+        "0x0000000000000001 (NEEDED)             Shared library: [libpthread.so.0]",
+        "0x0000000000000001 (NEEDED)             Shared library: [libc.so.6]"
+      ]
+    }
+  ],
+  "loaded_torch_core": [
+    "/opt/thinktwice/candidate-site/torch/lib/libc10.so",
+    "/opt/thinktwice/candidate-site/torch/lib/libc10_cuda.so",
+    "/opt/thinktwice/candidate-site/torch/lib/libtorch.so",
+    "/opt/thinktwice/candidate-site/torch/lib/libtorch_cpu.so",
+    "/opt/thinktwice/candidate-site/torch/lib/libtorch_cuda.so",
+    "/opt/thinktwice/candidate-site/torch/lib/libtorch_global_deps.so",
+    "/opt/thinktwice/candidate-site/torch/lib/libtorch_python.so"
+  ],
+  "loaded_cuda_libraries": [
+    "/opt/thinktwice/conda/lib/python3.7/site-packages/cumm_cu113.libs/libcudart-a7b20f20.so.11.3.109",
+    "/opt/thinktwice/conda/lib/python3.7/site-packages/cumm_cu113.libs/libnvrtc-1ea278b5.so.11.3.109",
+    "/opt/thinktwice/conda/lib/python3.7/site-packages/cumm_cu113.libs/libnvrtc-builtins-4730a239.so.11.3.109",
+    "/opt/thinktwice/cuda113-ptx/lib/libcublas.so.11.5.1.109",
+    "/opt/thinktwice/cuda113-ptx/lib/libcublasLt.so.11.5.1.109",
+    "/opt/thinktwice/cuda113-ptx/lib/libcudart.so.11.3.109",
+    "/opt/thinktwice/cuda113-ptx/lib/libcusparse.so.11.6.0.109",
+    "/usr/lib/wsl/drivers/nvhmi.inf_amd64_2c07e8aaaffbaaf9/libcuda.so.1.1",
+    "/usr/lib/wsl/lib/libcuda.so.1"
+  ],
+  "driver_cache": {
+    "CUDA_CACHE_PATH": "/opt/thinktwice/cuda-cache",
+    "CUDA_CACHE_MAXSIZE": "4294967296"
+  }
+}

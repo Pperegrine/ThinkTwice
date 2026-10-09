@@ -1,0 +1,18 @@
+wsl: 检测到 localhost 代理配置，但未镜像到 WSL。NAT 模式下的 WSL 不支持 localhost 代理。
+-rwxr-xr-x 1 root root 296M Oct  9 19:52 /opt/thinktwice/src/pytorch-1.12.1/build/lib/libtorch_cuda.so
+ 0x0000000000000001 (NEEDED)             Shared library: [libc10_cuda.so]
+ 0x0000000000000001 (NEEDED)             Shared library: [libcudart.so.11.0]
+ 0x0000000000000001 (NEEDED)             Shared library: [libcusparse.so.11]
+ 0x0000000000000001 (NEEDED)             Shared library: [libcurand.so.10]
+ 0x0000000000000001 (NEEDED)             Shared library: [libnvToolsExt.so.1]
+ 0x0000000000000001 (NEEDED)             Shared library: [libc10.so]
+ 0x0000000000000001 (NEEDED)             Shared library: [libtorch_cpu.so]
+ 0x0000000000000001 (NEEDED)             Shared library: [libcufft.so.10]
+ 0x0000000000000001 (NEEDED)             Shared library: [libcublas.so.11]
+ 0x0000000000000001 (NEEDED)             Shared library: [libcudnn.so.8]
+ 0x0000000000000001 (NEEDED)             Shared library: [libstdc++.so.6]
+ 0x0000000000000001 (NEEDED)             Shared library: [libm.so.6]
+ 0x0000000000000001 (NEEDED)             Shared library: [libgcc_s.so.1]
+ 0x0000000000000001 (NEEDED)             Shared library: [libc.so.6]
+ 0x0000000000000001 (NEEDED)             Shared library: [ld-linux-x86-64.so.2]
+ 0x000000000000001d (RUNPATH)            Library runpath: [/opt/thinktwice/src/pytorch-1.12.1/build/lib:/opt/thinktwice/cuda113-ptx/lib:/opt/thinktwice/cudnn832-link/lib:]

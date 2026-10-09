@@ -1,0 +1,9 @@
+{
+  "op": "spconv",
+  "torch": "1.12.1+cu113",
+  "cuda": "11.3",
+  "pass": false,
+  "spconv": "2.3.6",
+  "error": "Traceback (most recent call last):\n  File \"/mnt/d/Desktop/\u7aef\u5230\u7aef\u81ea\u52a8\u9a7e\u9a76\u5f00\u6e90\u6a21\u578b\u8c03\u7814/ThinkTwice/docs/reproduction/env-agent/scripts/probe_ops.py\", line 40, in <module>\n    layer.weight.fill_(0.25)\nRuntimeError: CUDA error: no kernel image is available for execution on the device\nCUDA kernel errors might be asynchronously reported at some other API call,so the stacktrace below might be incorrect.\nFor debugging consider passing CUDA_LAUNCH_BLOCKING=1.\n",
+  "seconds": 2.8254911259999744
+}

@@ -1,0 +1,22 @@
+{
+  "command": [
+    "/bin/bash",
+    "/opt/thinktwice/carla-0.9.10.1/CarlaUE4.sh",
+    "-opengl",
+    "-carla-rpc-port=22123",
+    "-nosound"
+  ],
+  "display": "",
+  "uid": 1000,
+  "pass": false,
+  "graphics_environment": {
+    "LD_LIBRARY_PATH": "/opt/thinktwice/mesa24/lib:/usr/lib/wsl/lib",
+    "LIBGL_DRIVERS_PATH": "/opt/thinktwice/mesa24/lib/dri",
+    "MESA_LOADER_DRIVER_OVERRIDE": null,
+    "GALLIUM_DRIVER": "d3d12",
+    "MESA_D3D12_DEFAULT_ADAPTER_NAME": "NVIDIA"
+  },
+  "pid": 31393,
+  "error": "Traceback (most recent call last):\n  File \"ThinkTwice/docs/reproduction/env-agent/scripts/run_carla_acceptance.py\", line 47, in <module>\n    raise RuntimeError('Server exited before RPC ready, return code ' + str(proc.returncode))\nRuntimeError: Server exited before RPC ready, return code 139\n",
+  "server_returncode": 139
+}

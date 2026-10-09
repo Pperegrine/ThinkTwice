@@ -1,0 +1,254 @@
+[
+  {
+    "path": "/opt/thinktwice/src/pytorch-1.12.1/third_party/pybind11",
+    "gitlink": "8de7772cc72daca8e947b79b83fea46214931604",
+    "source": "https://codeload.github.com/pybind/pybind11/tar.gz/8de7772cc72daca8e947b79b83fea46214931604",
+    "sha256": "53cd43ce8ade975225c2fd99325c2d3e42190b317fcabd6e13c6406972427bd0",
+    "pass": true
+  },
+  {
+    "path": "/opt/thinktwice/src/pytorch-1.12.1/third_party/cub",
+    "gitlink": "d106ddb991a56c3df1b6d51b2409e36ba8181ce4",
+    "source": "https://codeload.github.com/NVlabs/cub/tar.gz/d106ddb991a56c3df1b6d51b2409e36ba8181ce4",
+    "sha256": "d87f6737be1b544c299340b64b9303c1d6ec0447b49b3aaf6642838b4f8280d7",
+    "pass": true
+  },
+  {
+    "path": "/opt/thinktwice/src/pytorch-1.12.1/third_party/eigen",
+    "gitlink": "3147391d946bb4b6c68edd901f2add6ac1f31f8c",
+    "source": "https://gitlab.com/libeigen/eigen/-/archive/3147391d946bb4b6c68edd901f2add6ac1f31f8c/source.tar.gz",
+    "pass": false,
+    "error": "Command '['curl', '-fLsS', '--retry', '1', '--connect-timeout', '15', '--max-time', '120', 'https://gitlab.com/libeigen/eigen/-/archive/3147391d946bb4b6c68edd901f2add6ac1f31f8c/source.tar.gz', '-o', '/opt/thinktwice/assets/submodules/third_party_eigen_3147391d946bb4b6c68edd901f2add6ac1f31f8c.tar.gz']' returned non-zero exit status 28."
+  },
+  {
+    "path": "/opt/thinktwice/src/pytorch-1.12.1/third_party/googletest",
+    "gitlink": "e2239ee6043f73722e7aa812a459f54a28552929",
+    "source": "https://codeload.github.com/google/googletest/tar.gz/e2239ee6043f73722e7aa812a459f54a28552929",
+    "sha256": "2765fbfaa978e90d1c8477bc2f2b9705be65b1b562bb215dbfaa76567d508fe1",
+    "pass": true
+  },
+  {
+    "path": "/opt/thinktwice/src/pytorch-1.12.1/third_party/benchmark",
+    "gitlink": "e991355c02b93fe17713efe04cbc2e278e00fdbd",
+    "source": "https://codeload.github.com/google/benchmark/tar.gz/e991355c02b93fe17713efe04cbc2e278e00fdbd",
+    "sha256": "914f898c9efcd4d328dafad10df0cdc59708771acf66c29eaf0becc38a140a04",
+    "pass": true
+  },
+  {
+    "path": "/opt/thinktwice/src/pytorch-1.12.1/third_party/protobuf",
+    "gitlink": "d1eca4e4b421cd2997495c4b4e65cea6be4e9b8a",
+    "source": "https://codeload.github.com/protocolbuffers/protobuf/tar.gz/d1eca4e4b421cd2997495c4b4e65cea6be4e9b8a",
+    "sha256": "4579f7792b5ac9a2db2ad60409565f694a52b202078efbd36de066b6f2232992",
+    "pass": true
+  },
+  {
+    "path": "/opt/thinktwice/src/pytorch-1.12.1/third_party/protobuf/third_party/benchmark",
+    "gitlink": "5b7683f49e1e9223cf9927b24f6fd3d6bd82e3f8",
+    "source": "https://codeload.github.com/google/benchmark/tar.gz/5b7683f49e1e9223cf9927b24f6fd3d6bd82e3f8",
+    "sha256": "5dc92703f811f94e2aa63bdab07ab749f28a094befa6cdfd5fe177f947590a48",
+    "pass": true
+  },
+  {
+    "path": "/opt/thinktwice/src/pytorch-1.12.1/third_party/protobuf/third_party/googletest",
+    "gitlink": "5ec7f0c4a113e2f18ac2c6cc7df51ad6afc24081",
+    "source": "https://codeload.github.com/google/googletest/tar.gz/5ec7f0c4a113e2f18ac2c6cc7df51ad6afc24081",
+    "sha256": "0e2f36e8e403c125fd0ab02171bdb786d3b6b3875b6ccf3b2eb7969be8faecd0",
+    "pass": true
+  },
+  {
+    "path": "/opt/thinktwice/src/pytorch-1.12.1/third_party/ios-cmake",
+    "gitlink": "8abaed637d56f1337d6e1d2c4026e25c1eade724",
+    "source": "https://codeload.github.com/Yangqing/ios-cmake/tar.gz/8abaed637d56f1337d6e1d2c4026e25c1eade724",
+    "sha256": "25485cc56bbe0ad4e7453ec5e6b67f4943c9ca75dc3f6aa76a092003338d803c",
+    "pass": true
+  },
+  {
+    "path": "/opt/thinktwice/src/pytorch-1.12.1/third_party/NNPACK",
+    "gitlink": "c07e3a0400713d546e0dea2d5466dd22ea389c73",
+    "source": "https://codeload.github.com/Maratyszcza/NNPACK/tar.gz/c07e3a0400713d546e0dea2d5466dd22ea389c73",
+    "sha256": "7af7792ba33873fd8c0ca80f261c565e254ffb1348497da74541bf2909bf013d",
+    "pass": true
+  },
+  {
+    "path": "/opt/thinktwice/src/pytorch-1.12.1/third_party/gloo",
+    "gitlink": "c22a5cfba94edf8ea4f53a174d38aa0c629d070f",
+    "source": "https://codeload.github.com/facebookincubator/gloo/tar.gz/c22a5cfba94edf8ea4f53a174d38aa0c629d070f",
+    "sha256": "b5d82d1f8d1e00d7a929e9e8fdbd5f46f72bf62d70aafe6aa7b79a9ec2432f81",
+    "pass": true
+  },
+  {
+    "path": "/opt/thinktwice/src/pytorch-1.12.1/third_party/pthreadpool",
+    "gitlink": "a134dd5d4cee80cce15db81a72e7f929d71dd413",
+    "source": "https://codeload.github.com/Maratyszcza/pthreadpool/tar.gz/a134dd5d4cee80cce15db81a72e7f929d71dd413",
+    "sha256": "db5c281f6cd873670e2fef919ab398e4e0587f5265ddc9e014f17cb8e3449611",
+    "pass": true
+  },
+  {
+    "path": "/opt/thinktwice/src/pytorch-1.12.1/third_party/FXdiv",
+    "gitlink": "b408327ac2a15ec3e43352421954f5b1967701d1",
+    "source": "https://codeload.github.com/Maratyszcza/FXdiv/tar.gz/b408327ac2a15ec3e43352421954f5b1967701d1",
+    "sha256": "9ccf554541666b5c089ad5dd465141d671c99971f36d72f313652f5c49ffce14",
+    "pass": true
+  },
+  {
+    "path": "/opt/thinktwice/src/pytorch-1.12.1/third_party/FP16",
+    "gitlink": "4dfe081cf6bcd15db339cf2680b9281b8451eeb3",
+    "source": "https://codeload.github.com/Maratyszcza/FP16/tar.gz/4dfe081cf6bcd15db339cf2680b9281b8451eeb3",
+    "sha256": "90f20492621d5ed80b442aa682ff92d7ccf333ac8fac4a10e7e02afb159f3c13",
+    "pass": true
+  },
+  {
+    "path": "/opt/thinktwice/src/pytorch-1.12.1/third_party/psimd",
+    "gitlink": "072586a71b55b7f8c584153d223e95687148a900",
+    "source": "https://codeload.github.com/Maratyszcza/psimd/tar.gz/072586a71b55b7f8c584153d223e95687148a900",
+    "sha256": "f6c4dab91ae9a03b3019e7cab0572743afd0e1b6e75b97fcca50259c737c924e",
+    "pass": true
+  },
+  {
+    "path": "/opt/thinktwice/src/pytorch-1.12.1/third_party/zstd",
+    "gitlink": "aec56a52fbab207fc639a1937d1e708a282edca8",
+    "source": "https://codeload.github.com/facebook/zstd/tar.gz/aec56a52fbab207fc639a1937d1e708a282edca8",
+    "sha256": "fc05493c1ba7937eb350c69ebcf7a0b82c420d840cfe06de84bdecfd1332bce6",
+    "pass": true
+  },
+  {
+    "path": "/opt/thinktwice/src/pytorch-1.12.1/third_party/cpuinfo",
+    "gitlink": "5916273f79a21551890fd3d56fc5375a78d1598d",
+    "source": "https://codeload.github.com/pytorch/cpuinfo/tar.gz/5916273f79a21551890fd3d56fc5375a78d1598d",
+    "sha256": "f3c16d5d393d6d1fa6b6ed8621dd0a535552df9bc88cbba739375dde38a93142",
+    "pass": true
+  },
+  {
+    "path": "/opt/thinktwice/src/pytorch-1.12.1/third_party/python-enum",
+    "gitlink": "4cfedc426c4e2fc52e3f5c2b4297e15ed8d6b8c7",
+    "source": "https://codeload.github.com/PeachPy/enum34/tar.gz/4cfedc426c4e2fc52e3f5c2b4297e15ed8d6b8c7",
+    "sha256": "4fe3f5640686512dfa125dca7f8201a0318b6739fe3e9a516c37d9d7740af566",
+    "pass": true
+  },
+  {
+    "path": "/opt/thinktwice/src/pytorch-1.12.1/third_party/python-peachpy",
+    "gitlink": "f45429b087dd7d5bc78bb40dc7cf06425c252d67",
+    "source": "https://codeload.github.com/malfet/PeachPy/tar.gz/f45429b087dd7d5bc78bb40dc7cf06425c252d67",
+    "sha256": "e57182725e856db7751df5a4546fbc4fee9dd7a59ea2285ae4b3452b0dc7bc5c",
+    "pass": true
+  },
+  {
+    "path": "/opt/thinktwice/src/pytorch-1.12.1/third_party/python-six",
+    "gitlink": "15e31431af97e5e64b80af0a3f598d382bcdd49a",
+    "source": "https://codeload.github.com/benjaminp/six/tar.gz/15e31431af97e5e64b80af0a3f598d382bcdd49a",
+    "sha256": "b296916bb8dd9db59471a7bf7e273dcb2adf580299df1d0708f8112dd5bf0e52",
+    "pass": true
+  },
+  {
+    "path": "/opt/thinktwice/src/pytorch-1.12.1/third_party/onnx",
+    "gitlink": "96046b8ccfb8e6fa82f6b2b34b3d56add2e8849c",
+    "source": "https://codeload.github.com/onnx/onnx/tar.gz/96046b8ccfb8e6fa82f6b2b34b3d56add2e8849c",
+    "sha256": "38b524e8074734ca10be54f47d7a1819d701b7fbe5741b06db36ce3548e376c2",
+    "pass": true
+  },
+  {
+    "path": "/opt/thinktwice/src/pytorch-1.12.1/third_party/onnx/third_party/pybind11",
+    "gitlink": "59a2ac2745d8a57ac94c6accced73620d59fb844",
+    "source": "https://codeload.github.com/pybind/pybind11/tar.gz/59a2ac2745d8a57ac94c6accced73620d59fb844",
+    "sha256": "3276f79ae507ae578501ffc2833f8e9082092eb99e59763a77d08c3fdea35bec",
+    "pass": true
+  },
+  {
+    "path": "/opt/thinktwice/src/pytorch-1.12.1/third_party/onnx/third_party/benchmark",
+    "gitlink": "e776aa0275e293707b6a0901e0e8d8a8a3679508",
+    "source": "https://codeload.github.com/google/benchmark/tar.gz/e776aa0275e293707b6a0901e0e8d8a8a3679508",
+    "sha256": "c7682e9007ddfd94072647abab3e89ffd9084089460ae47d67060974467b58bf",
+    "pass": true
+  },
+  {
+    "path": "/opt/thinktwice/src/pytorch-1.12.1/third_party/onnx-tensorrt",
+    "gitlink": "c153211418a7c57ce071d9ce2a41f8d1c85a878f",
+    "source": "https://codeload.github.com/onnx/onnx-tensorrt/tar.gz/c153211418a7c57ce071d9ce2a41f8d1c85a878f",
+    "sha256": "314cde420a7cf692bdb6877bc6af6bc514805f6cdb8bee90f32566ed08d94b1c",
+    "pass": true
+  },
+  {
+    "path": "/opt/thinktwice/src/pytorch-1.12.1/third_party/onnx-tensorrt/third_party/onnx",
+    "gitlink": "765f5ee823a67a866f4bd28a9860e81f3c811ce8",
+    "source": "https://codeload.github.com/onnx/onnx/tar.gz/765f5ee823a67a866f4bd28a9860e81f3c811ce8",
+    "sha256": "6835e8b278b7b38a3ad34c6c3d378713abdf78524aadb2c0f9afe16371b57fb7",
+    "pass": true
+  },
+  {
+    "path": "/opt/thinktwice/src/pytorch-1.12.1/third_party/onnx-tensorrt/third_party/onnx/third_party/pybind11",
+    "gitlink": "a1041190c8b8ff0cd9e2f0752248ad5e3789ea0c",
+    "source": "https://codeload.github.com/pybind/pybind11/tar.gz/a1041190c8b8ff0cd9e2f0752248ad5e3789ea0c",
+    "sha256": "79cc7be5edbb79b79a73af42d91608e8f65c5502bf92361dccd3895b128e061b",
+    "pass": true
+  },
+  {
+    "path": "/opt/thinktwice/src/pytorch-1.12.1/third_party/onnx-tensorrt/third_party/onnx/third_party/pybind11/tools/clang",
+    "gitlink": "6a00cbc4a9b8e68b71caf7f774b3f9c753ae84d5",
+    "source": "https://codeload.github.com/wjakob/clang-cindex-python3/tar.gz/6a00cbc4a9b8e68b71caf7f774b3f9c753ae84d5",
+    "sha256": "828e0d6238e2129a9e08071750dc16ba10e38eacf96f21b8a71e501c2085b282",
+    "pass": true
+  },
+  {
+    "path": "/opt/thinktwice/src/pytorch-1.12.1/third_party/onnx-tensorrt/third_party/onnx/third_party/benchmark",
+    "gitlink": "e776aa0275e293707b6a0901e0e8d8a8a3679508",
+    "source": "https://codeload.github.com/google/benchmark/tar.gz/e776aa0275e293707b6a0901e0e8d8a8a3679508",
+    "sha256": "c7682e9007ddfd94072647abab3e89ffd9084089460ae47d67060974467b58bf",
+    "pass": true
+  },
+  {
+    "path": "/opt/thinktwice/src/pytorch-1.12.1/third_party/sleef",
+    "gitlink": "e0a003ee838b75d11763aa9c3ef17bf71a725bff",
+    "source": "https://codeload.github.com/shibatch/sleef/tar.gz/e0a003ee838b75d11763aa9c3ef17bf71a725bff",
+    "sha256": "fdf8901ebeb58924e197dd14d264f7c04e9f80da720f4c38deb13992f1bb89ac",
+    "pass": true
+  },
+  {
+    "path": "/opt/thinktwice/src/pytorch-1.12.1/third_party/ideep",
+    "gitlink": "02b17c5748c9349dcc586c359af800c684d9b1ab",
+    "source": "https://codeload.github.com/intel/ideep/tar.gz/02b17c5748c9349dcc586c359af800c684d9b1ab",
+    "sha256": "e62b9286ebf5fcce13abd48f7a87ce7099d8914ab424b3a2d940d4ed10832dba",
+    "pass": true
+  },
+  {
+    "path": "/opt/thinktwice/src/pytorch-1.12.1/third_party/ideep/mkl-dnn",
+    "gitlink": "888a87a954e4fddb4d81fd10858eb834f2441b46",
+    "source": "https://codeload.github.com/intel/mkl-dnn/tar.gz/888a87a954e4fddb4d81fd10858eb834f2441b46",
+    "sha256": "bcc74032a15949a0f138336d1f15b8586d3acb8daa317fd6568f2c11a52d1fd4",
+    "pass": true
+  },
+  {
+    "path": "/opt/thinktwice/src/pytorch-1.12.1/third_party/ideep/mkl-dnn/third_party/oneDNN",
+    "gitlink": "52b5f107dd9cf10910aaa19cb47f3abf9b349815",
+    "source": "https://codeload.github.com/oneapi-src/oneDNN/tar.gz/52b5f107dd9cf10910aaa19cb47f3abf9b349815",
+    "sha256": "327ef1acf20bc06c8376be3950333a7ec6fabd2d09ccc74910d2056c082fef99",
+    "pass": true
+  },
+  {
+    "path": "/opt/thinktwice/src/pytorch-1.12.1/third_party/nccl/nccl",
+    "gitlink": "7e515921295adaab72adf56ea71a0fafb0ecb5f3",
+    "source": "https://codeload.github.com/NVIDIA/nccl/tar.gz/7e515921295adaab72adf56ea71a0fafb0ecb5f3",
+    "sha256": "c3dc97d65a5277299a6e712cd5358af47b32044e1bdcddbaf338aeb19d296d2b",
+    "pass": true
+  },
+  {
+    "path": "/opt/thinktwice/src/pytorch-1.12.1/third_party/gemmlowp/gemmlowp",
+    "gitlink": "3fb5c176c17c765a3492cd2f0321b0dab712f350",
+    "source": "https://codeload.github.com/google/gemmlowp/tar.gz/3fb5c176c17c765a3492cd2f0321b0dab712f350",
+    "sha256": "fdd6f08bdb33d33f4df516ffb91730fdb163479c19502cfc983083fd9cf43bfa",
+    "pass": true
+  },
+  {
+    "path": "/opt/thinktwice/src/pytorch-1.12.1/third_party/QNNPACK",
+    "gitlink": "7d2a4e9931a82adc3814275b6219a03e24e36b4c",
+    "source": "https://codeload.github.com/pytorch/QNNPACK/tar.gz/7d2a4e9931a82adc3814275b6219a03e24e36b4c",
+    "sha256": "0d752bd75f46ce4d7c6f0a60b0d6c0e5918a7b4683c825284f8db3706dd24f76",
+    "pass": true
+  },
+  {
+    "path": "/opt/thinktwice/src/pytorch-1.12.1/third_party/neon2sse",
+    "gitlink": "97a126f08ce318023be604d03f88bf0820a9464a",
+    "source": "https://codeload.github.com/intel/ARM_NEON_2_x86_SSE/tar.gz/97a126f08ce318023be604d03f88bf0820a9464a",
+    "sha256": "2713f5d97ab6fdde6fd9625a5bcd82bc3d7cd92f506b20c27d5e06f2bc996836",
+    "pass": true
+  }
+]

@@ -1,0 +1,11 @@
+{
+  "scope": "local deployment fix: split aggregate copy and retain deref path/write mask",
+  "library": "/opt/thinktwice/mesa24-triangle-fix-v2/lib/dri/swrast_dri.so",
+  "bytes": 111524344,
+  "sha256": "94410eaf19a0a9aa9de645736ffb6cba0d5b55c265d8e11ad343a6384db8d12b",
+  "source_sha256": "e4fbc5a5a906e14146b090676805e4eea0fd475b6bf2f47c8bb45a4b899679f3",
+  "original_source_backup": "/opt/thinktwice/src/mesa-24.0.5/src/gallium/drivers/d3d12/d3d12_nir_passes.c.before-triangle-copy-fix",
+  "previous_install_and_candidates_preserved": true,
+  "runtime_validation": "pending",
+  "model_agent_control_changes": []
+}

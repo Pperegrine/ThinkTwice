@@ -1,0 +1,56 @@
+[
+  {
+    "source": ".thinktwice-runtime/runs/20261009-smoke13-cleanup-final/cleanup-verification.json",
+    "copy": "evidence/20261009-smoke13-summary/cleanup-verification.json",
+    "bytes": 260,
+    "sha256": "238a8821ce30f66df9268178a3f18685e8d29484492395f49d57a17c9997b974"
+  },
+  {
+    "source": ".thinktwice-runtime/runs/20261009-smoke13-cleanup-final/results.json",
+    "copy": "evidence/20261009-smoke13-summary/results.json",
+    "bytes": 3104,
+    "sha256": "91b2988b92274e37cbd7b7e7d5d27cd1ec50fc0ecb72f6005f8092707e2e93fc"
+  },
+  {
+    "source": ".thinktwice-runtime/runs/20261009-smoke13-cleanup-final/run.json",
+    "copy": "evidence/20261009-smoke13-summary/run.json",
+    "bytes": 7617,
+    "sha256": "1802c1b62c40f8c4d8bfa4e80c1d72a187df1fc4bd96da41e085c1d351e53c72"
+  },
+  {
+    "source": ".thinktwice-runtime/runs/20261009-smoke13-cleanup-final/smoke-acceptance.json",
+    "copy": "evidence/20261009-smoke13-summary/smoke-acceptance.json",
+    "bytes": 1361,
+    "sha256": "dedc6cdaf4cf255bce0536cdc175995fae150012b592d4788bbb22f1be73bce4"
+  },
+  {
+    "source": ".thinktwice-runtime/runs/20261009-smoke13-cleanup-final/termination.json",
+    "copy": "evidence/20261009-smoke13-summary/termination.json",
+    "bytes": 281,
+    "sha256": "a1e4b7405e79af8bdd96ec7f7cfd30c64fd53f64d1db9d0aaf4e5d9c31fe3592"
+  },
+  {
+    "source": ".thinktwice-runtime/launch/20261009-smoke-v5/evaluator-deployment.diff",
+    "copy": "evidence/20261009-smoke-v5/evaluator-deployment.diff",
+    "bytes": 4648,
+    "sha256": "3d5a66b1665b3e5cbb0c6a8ae801b667f61497242f66b4735a6967832f21c96f"
+  },
+  {
+    "source": ".thinktwice-runtime/launch/20261009-smoke-v5/agent-observation.diff",
+    "copy": "evidence/20261009-smoke-v5/agent-observation.diff",
+    "bytes": 6000,
+    "sha256": "ab1671b2bd888a2523a05549e17a85cc0db892216d0735d7f232a024b5d2e0f1"
+  },
+  {
+    "source": ".thinktwice-runtime/launch/20261009-smoke-v5/manifest.json",
+    "copy": "evidence/20261009-smoke-v5/manifest.json",
+    "bytes": 1306,
+    "sha256": "b482b97571dff15314385a934a0d453637fc54083f036bcc660d4fd9343241e4"
+  },
+  {
+    "source": ".thinktwice-runtime/launch/20261009-smoke-v5/routes_town05_single.xml",
+    "copy": "evidence/20261009-smoke-v5/routes_town05_single.xml",
+    "bytes": 3979,
+    "sha256": "1475a447c063a3e34b2d84311fc6270e5efb09e9f5c652dbe0fd2cd6c70e4e4e"
+  }
+]

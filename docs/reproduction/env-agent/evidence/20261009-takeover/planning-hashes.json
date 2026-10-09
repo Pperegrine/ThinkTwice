@@ -1,0 +1,38 @@
+[
+  {
+    "Path": "D:\\Desktop\\端到端自动驾驶开源模型调研\\docs\\reproduction\\00_MASTER_PLAN.md",
+    "Hash": "E9E649EA3FD5D4AC20F83EB2549004D281A7BC9921209074D65DCB50E7CFFA88"
+  },
+  {
+    "Path": "D:\\Desktop\\端到端自动驾驶开源模型调研\\docs\\reproduction\\01_REPOSITORY_AUDIT.md",
+    "Hash": "BC49D6B20DB800B20A7902931A95E67A37D60CB7D58B139C4587D53F3A32AC21"
+  },
+  {
+    "Path": "D:\\Desktop\\端到端自动驾驶开源模型调研\\docs\\reproduction\\02_ENVIRONMENT_MATRIX.md",
+    "Hash": "378EB3E715F5A0DFFC7E9DDCEA901B268C0A9BA9753B8440DF183E9F70A0C546"
+  },
+  {
+    "Path": "D:\\Desktop\\端到端自动驾驶开源模型调研\\docs\\reproduction\\03_REPRODUCTION_RUNBOOK.md",
+    "Hash": "B2160E9DCE4B72F505B2A34543A7E08BB514D16B0AE24DF49CB0EBC7611E84C6"
+  },
+  {
+    "Path": "D:\\Desktop\\端到端自动驾驶开源模型调研\\docs\\reproduction\\04_LOGGING_SPEC.md",
+    "Hash": "73E98F7615EB6A8A66A78CF30C8F0DF2F3C9543498C20B365A7CBDB0E1BC1030"
+  },
+  {
+    "Path": "D:\\Desktop\\端到端自动驾驶开源模型调研\\docs\\reproduction\\05_METRICS_AND_TESTS.md",
+    "Hash": "966F24346AF94DA15EA05FC288F57387588C5FB56091865CDE99049DB1344274"
+  },
+  {
+    "Path": "D:\\Desktop\\端到端自动驾驶开源模型调研\\docs\\reproduction\\06_EXPERIMENT_MATRIX.md",
+    "Hash": "0B1B4F91D43EBC40D7992CC8FA033D27F9E16E813D64C73AFC92FDB350576753"
+  },
+  {
+    "Path": "D:\\Desktop\\端到端自动驾驶开源模型调研\\docs\\reproduction\\07_PROGRESS_TRACKER.md",
+    "Hash": "DA802C82BF001FBA39D2B8D7FE818FFACDA75B37DC3DE1B95E3503A1FD3640EF"
+  },
+  {
+    "Path": "D:\\Desktop\\端到端自动驾驶开源模型调研\\docs\\reproduction\\08_DECISION_LOG.md",
+    "Hash": "59EDBF05317D390EB67C942AFF6BCE48ADF1CCEBF8E8029F98D304E5667E8B6B"
+  }
+]

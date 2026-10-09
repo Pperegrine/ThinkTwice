@@ -1,0 +1,61 @@
+{
+  "scope": "synthetic complete official LiDAR CUDA stack, not real sensors",
+  "pass": true,
+  "metadata_entries_preserved": 127,
+  "original_input_weight_shape": [
+    16,
+    3,
+    3,
+    3,
+    5
+  ],
+  "strict_lidar_keys": 210,
+  "inputs": {
+    "shape": [
+      1,
+      12000,
+      5
+    ],
+    "point_cloud_range": [
+      -8.0,
+      -19.200000762939453,
+      -4.0,
+      30.399999618530273,
+      19.200000762939453,
+      10.0
+    ]
+  },
+  "torch": {
+    "version": "1.12.1",
+    "path": "/opt/thinktwice/candidate-site/torch/__init__.py"
+  },
+  "invocations": [
+    {
+      "iteration": 0,
+      "seconds": 4.424193894999988,
+      "shapes": [
+        [
+          1,
+          512,
+          84,
+          84
+        ]
+      ],
+      "finite": true
+    },
+    {
+      "iteration": 1,
+      "seconds": 0.04530471699999339,
+      "shapes": [
+        [
+          1,
+          512,
+          84,
+          84
+        ]
+      ],
+      "finite": true
+    }
+  ],
+  "cache_state": "existing driver cache; first invocation is not asserted cache-cold"
+}

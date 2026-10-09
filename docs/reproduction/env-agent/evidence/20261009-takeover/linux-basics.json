@@ -1,0 +1,47 @@
+{
+  "python": "3.7.16 (default, Jan 17 2023, 22:20:44) \n[GCC 11.2.0]",
+  "executable": "/opt/thinktwice/conda/bin/python",
+  "stages": {
+    "cpu_tensor_numpy": {
+      "pass": true,
+      "seconds": 0.4168403169999806,
+      "result": {
+        "numpy": "1.20.3",
+        "numpy_file": "/opt/thinktwice/conda/lib/python3.7/site-packages/numpy/__init__.py",
+        "torch": "1.12.1+cu113",
+        "shape": [
+          3,
+          4
+        ],
+        "roundtrip": true
+      },
+      "warnings": []
+    },
+    "cuda_tensor_numpy": {
+      "pass": true,
+      "seconds": 0.4417340200000126,
+      "result": {
+        "roundtrip": true,
+        "device": "NVIDIA GeForce RTX 5080 Laptop GPU",
+        "cuda": "11.3",
+        "arch": [
+          "sm_37",
+          "sm_50",
+          "sm_60",
+          "sm_70",
+          "sm_75",
+          "sm_80",
+          "sm_86"
+        ]
+      },
+      "warnings": [
+        "\nNVIDIA GeForce RTX 5080 Laptop GPU with CUDA capability sm_120 is not compatible with the current PyTorch installation.\nThe current PyTorch install supports CUDA capabilities sm_37 sm_50 sm_60 sm_70 sm_75 sm_80 sm_86.\nIf you want to use the NVIDIA GeForce RTX 5080 Laptop GPU GPU with PyTorch, please check the instructions at https://pytorch.org/get-started/locally/\n"
+      ]
+    },
+    "cuda_finite_sync_bench": {
+      "pass": false,
+      "seconds": 0.007134921000044869,
+      "error": "Traceback (most recent call last):\n  File \"/mnt/d/Desktop/\u7aef\u5230\u7aef\u81ea\u52a8\u9a7e\u9a76\u5f00\u6e90\u6a21\u578b\u8c03\u7814/ThinkTwice/docs/reproduction/env-agent/scripts/probe_basics.py\", line 15, in stage\n    result = fn()\n  File \"/mnt/d/Desktop/\u7aef\u5230\u7aef\u81ea\u52a8\u9a7e\u9a76\u5f00\u6e90\u6a21\u578b\u8c03\u7814/ThinkTwice/docs/reproduction/env-agent/scripts/probe_basics.py\", line 60, in cuda_bench\n    a,cold_rng=timed(lambda: torch.randn(512,512,device='cuda'))\n  File \"/mnt/d/Desktop/\u7aef\u5230\u7aef\u81ea\u52a8\u9a7e\u9a76\u5f00\u6e90\u6a21\u578b\u8c03\u7814/ThinkTwice/docs/reproduction/env-agent/scripts/probe_basics.py\", line 53, in timed\n    out=fn()\n  File \"/mnt/d/Desktop/\u7aef\u5230\u7aef\u81ea\u52a8\u9a7e\u9a76\u5f00\u6e90\u6a21\u578b\u8c03\u7814/ThinkTwice/docs/reproduction/env-agent/scripts/probe_basics.py\", line 60, in <lambda>\n    a,cold_rng=timed(lambda: torch.randn(512,512,device='cuda'))\nRuntimeError: CUDA error: no kernel image is available for execution on the device\nCUDA kernel errors might be asynchronously reported at some other API call,so the stacktrace below might be incorrect.\nFor debugging consider passing CUDA_LAUNCH_BLOCKING=1.\n"
+    }
+  }
+}

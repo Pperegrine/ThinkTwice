@@ -1,0 +1,31 @@
+{
+  "pass": true,
+  "scope": "binary/import identity only, not numerical operator execution",
+  "torch": {
+    "version": "1.12.1",
+    "path": "/opt/thinktwice/candidate-site/torch/__init__.py",
+    "cuda": "11.3",
+    "cudnn": 8302,
+    "abi": true
+  },
+  "extensions": [],
+  "loaded_torch_core": [
+    "/opt/thinktwice/candidate-site/torch/lib/libc10.so",
+    "/opt/thinktwice/candidate-site/torch/lib/libc10_cuda.so",
+    "/opt/thinktwice/candidate-site/torch/lib/libtorch.so",
+    "/opt/thinktwice/candidate-site/torch/lib/libtorch_cpu.so",
+    "/opt/thinktwice/candidate-site/torch/lib/libtorch_cuda.so",
+    "/opt/thinktwice/candidate-site/torch/lib/libtorch_global_deps.so",
+    "/opt/thinktwice/candidate-site/torch/lib/libtorch_python.so"
+  ],
+  "loaded_cuda_libraries": [
+    "/opt/thinktwice/cuda113-ptx/lib/libcublas.so.11.5.1.109",
+    "/opt/thinktwice/cuda113-ptx/lib/libcublasLt.so.11.5.1.109",
+    "/opt/thinktwice/cuda113-ptx/lib/libcudart.so.11.3.109",
+    "/opt/thinktwice/cuda113-ptx/lib/libcusparse.so.11.6.0.109"
+  ],
+  "driver_cache": {
+    "CUDA_CACHE_PATH": "/opt/thinktwice/cuda-cache",
+    "CUDA_CACHE_MAXSIZE": "4294967296"
+  }
+}

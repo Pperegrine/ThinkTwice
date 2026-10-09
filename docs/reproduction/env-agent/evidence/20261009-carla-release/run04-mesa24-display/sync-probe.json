@@ -1,0 +1,6 @@
+{
+  "scope": "CARLA API, Town05, synchronous clock only",
+  "pass": false,
+  "egg": "/opt/thinktwice/carla-0.9.10.1/PythonAPI/carla/dist/carla-0.9.10-py3.7-linux-x86_64.egg",
+  "error": "Traceback (most recent call last):\n  File \"ThinkTwice/docs/reproduction/env-agent/scripts/probe_carla_sync.py\", line 23, in <module>\n    import carla\n  File \"/opt/thinktwice/carla-0.9.10.1/PythonAPI/carla/dist/carla-0.9.10-py3.7-linux-x86_64.egg/carla/__init__.py\", line 8, in <module>\n    from .libcarla import *\n  File \"/opt/thinktwice/carla-0.9.10.1/PythonAPI/carla/dist/carla-0.9.10-py3.7-linux-x86_64.egg/carla/libcarla.py\", line 9, in <module>\n  File \"/opt/thinktwice/carla-0.9.10.1/PythonAPI/carla/dist/carla-0.9.10-py3.7-linux-x86_64.egg/carla/libcarla.py\", line 7, in __bootstrap__\nImportError: libpng16.so.16: cannot open shared object file: No such file or directory\n"
+}

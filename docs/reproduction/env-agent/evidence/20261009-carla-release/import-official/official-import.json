@@ -1,0 +1,11 @@
+{
+  "pass": true,
+  "returncode": 0,
+  "command": [
+    "bash",
+    "ImportAssets.sh"
+  ],
+  "restored_newer_base_assets": [],
+  "retained_import_archive": "/opt/thinktwice/carla-0.9.10.1/Import/AdditionalMaps_0.9.10.1.tar.gz",
+  "method": "original release tar --keep-newer-files"
+}

@@ -1,0 +1,7 @@
+{
+  "identity": "local full SHA256; official filename prefix verified",
+  "sha256": "0676ba61b6795bbe1773cffd859882e5e297624d384b6993f7c9e683e722fb8a",
+  "http_status": 200,
+  "url": "https://download.pytorch.org/models/resnet50-0676ba61.pth",
+  "bytes": 102530333
+}

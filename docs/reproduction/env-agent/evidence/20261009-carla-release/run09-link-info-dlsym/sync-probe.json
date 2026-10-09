@@ -1,0 +1,18 @@
+{
+  "scope": "CARLA API, Town05, synchronous clock only",
+  "pass": false,
+  "egg": "/opt/thinktwice/carla-0.9.10.1/PythonAPI/carla/dist/carla-0.9.10-py3.7-linux-x86_64.egg",
+  "client_version": "784d9b9f",
+  "server_version": "784d9b9f",
+  "stage": "loading_Town05",
+  "available_maps": [
+    "/Game/Carla/Maps/Town02",
+    "/Game/Carla/Maps/Town03",
+    "/Game/Carla/Maps/Town05",
+    "/Game/Carla/Maps/Town01",
+    "/Game/Carla/Maps/Town10HD",
+    "/Game/Carla/Maps/Town04",
+    "/Game/Carla/Maps/Town06",
+    "/Game/Carla/Maps/Town07"
+  ]
+}

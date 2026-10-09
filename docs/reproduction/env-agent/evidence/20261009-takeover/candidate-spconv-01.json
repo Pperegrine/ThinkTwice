@@ -1,0 +1,15 @@
+{
+  "op": "spconv",
+  "torch": "1.12.1",
+  "torch_file": "/opt/thinktwice/candidate-site/torch/__init__.py",
+  "cuda": "11.3",
+  "pass": true,
+  "spconv": "2.3.6",
+  "spconv_package_path": "/opt/thinktwice/conda/lib/python3.7/site-packages/spconv/__init__.py",
+  "shape": [
+    3,
+    4
+  ],
+  "finite": true,
+  "seconds": 98.75148376599998
+}

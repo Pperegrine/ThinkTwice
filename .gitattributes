@@ -1,0 +1,5 @@
+/docs/reproduction/env-agent/scripts/*.sh text eol=lf
+/docs/reproduction/env-agent/scripts/*.py text eol=lf
+/docs/reproduction/env-agent/scripts/*.ps1 text eol=lf
+/docs/reproduction/env-agent/scripts/*.c text eol=lf
+/docs/reproduction/env-agent/evidence/** -text

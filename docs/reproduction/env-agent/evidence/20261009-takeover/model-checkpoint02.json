@@ -1,0 +1,11 @@
+{
+  "scope": "CPU model/key/shape only; not CUDA inference",
+  "pass": true,
+  "refine_num": 5,
+  "checkpoint_keys": 1344,
+  "model_keys": 1344,
+  "missing": [],
+  "unexpected": [],
+  "shape_mismatches": {},
+  "parameter_count": 128232121
+}

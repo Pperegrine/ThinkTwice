@@ -1,0 +1,14 @@
+--- /opt/thinktwice/src/pytorch-1.12.1/aten/src/ATen/native/cuda/jit_utils.cpp.before-nvrtc-arch-fix
++++ /opt/thinktwice/src/pytorch-1.12.1/aten/src/ATen/native/cuda/jit_utils.cpp
+@@ -634,6 +634,11 @@
+     max_dev_version = CUDAVersion(7, 5);
+   } else if (nvrtc_version == CUDAVersion(11, 0)) { // 11.0 supports 3-8.0
+     max_dev_version = CUDAVersion(8, 0);
++  } else if (nvrtc_version >= CUDAVersion(11, 1) &&
++             nvrtc_version <= CUDAVersion(11, 3)) {
++    // Deployment compatibility: these NVRTC versions support at most 8.6.
++    // Future devices must receive forward-compatible PTX, not sm_120 SASS.
++    max_dev_version = CUDAVersion(8, 6);
+   } else {
+     // If the driver version is unknown (i.e. newer than this code)
+     // assume the driver supports this device

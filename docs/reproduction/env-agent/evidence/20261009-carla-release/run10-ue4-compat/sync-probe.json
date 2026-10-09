@@ -1,0 +1,92 @@
+{
+  "scope": "CARLA API, Town05, synchronous clock only",
+  "pass": true,
+  "egg": "/opt/thinktwice/carla-0.9.10.1/PythonAPI/carla/dist/carla-0.9.10-py3.7-linux-x86_64.egg",
+  "client_version": "784d9b9f",
+  "server_version": "784d9b9f",
+  "stage": "synchronous_ticks",
+  "available_maps": [
+    "/Game/Carla/Maps/Town02",
+    "/Game/Carla/Maps/Town03",
+    "/Game/Carla/Maps/Town05",
+    "/Game/Carla/Maps/Town01",
+    "/Game/Carla/Maps/Town10HD",
+    "/Game/Carla/Maps/Town04",
+    "/Game/Carla/Maps/Town06",
+    "/Game/Carla/Maps/Town07"
+  ],
+  "map": "Town05",
+  "ticks": [
+    {
+      "frame": 9,
+      "snapshot_frame": 9,
+      "elapsed_seconds": 16.100093979388475,
+      "delta_seconds": 0.05000000074505806,
+      "wall_seconds": 0.1693110080000224
+    },
+    {
+      "frame": 10,
+      "snapshot_frame": 10,
+      "elapsed_seconds": 16.150093980133533,
+      "delta_seconds": 0.05000000074505806,
+      "wall_seconds": 0.16348580400017454
+    },
+    {
+      "frame": 11,
+      "snapshot_frame": 11,
+      "elapsed_seconds": 16.20009398087859,
+      "delta_seconds": 0.05000000074505806,
+      "wall_seconds": 0.15810157100008837
+    },
+    {
+      "frame": 12,
+      "snapshot_frame": 12,
+      "elapsed_seconds": 16.25009398162365,
+      "delta_seconds": 0.05000000074505806,
+      "wall_seconds": 0.18464161599990803
+    },
+    {
+      "frame": 13,
+      "snapshot_frame": 13,
+      "elapsed_seconds": 16.300093982368708,
+      "delta_seconds": 0.05000000074505806,
+      "wall_seconds": 0.16626264299998184
+    },
+    {
+      "frame": 14,
+      "snapshot_frame": 14,
+      "elapsed_seconds": 16.350093983113766,
+      "delta_seconds": 0.05000000074505806,
+      "wall_seconds": 0.1760446769999362
+    },
+    {
+      "frame": 15,
+      "snapshot_frame": 15,
+      "elapsed_seconds": 16.400093983858824,
+      "delta_seconds": 0.05000000074505806,
+      "wall_seconds": 0.1586714589998337
+    },
+    {
+      "frame": 16,
+      "snapshot_frame": 16,
+      "elapsed_seconds": 16.450093984603882,
+      "delta_seconds": 0.05000000074505806,
+      "wall_seconds": 0.15983400599998276
+    },
+    {
+      "frame": 17,
+      "snapshot_frame": 17,
+      "elapsed_seconds": 16.50009398534894,
+      "delta_seconds": 0.05000000074505806,
+      "wall_seconds": 0.16676165199987736
+    },
+    {
+      "frame": 18,
+      "snapshot_frame": 18,
+      "elapsed_seconds": 16.550093986093998,
+      "delta_seconds": 0.05000000074505806,
+      "wall_seconds": 0.1622085280000647
+    }
+  ],
+  "settings_restored": true
+}

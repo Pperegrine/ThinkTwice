@@ -1,0 +1,10 @@
+{
+  "scope": "CUDA runtime compilation target only, same torch1.12.1 ABI1",
+  "installed_library": "/opt/thinktwice/candidate-site/torch/lib/libtorch_cuda.so",
+  "bytes": 310286504,
+  "sha256": "ce89a629b94ee4847849f180de2ce4b5e6fe56b20c4be360bede046617191c0b",
+  "backup": "/opt/thinktwice/candidate-backups/torch-before-nvrtc-arch-fix/libtorch_cuda.so",
+  "source_backup": "/opt/thinktwice/src/pytorch-1.12.1/aten/src/ATen/native/cuda/jit_utils.cpp.before-nvrtc-arch-fix",
+  "model_control_operator_formula_changes": [],
+  "runtime_validation": "pending"
+}

@@ -1,0 +1,119 @@
+--- /mnt/d/Desktop/端到端自动驾驶开源模型调研/ThinkTwice/leaderboard/leaderboard/leaderboard_evaluator.py
++++ /mnt/d/Desktop/端到端自动驾驶开源模型调研/.thinktwice-runtime/launch/20261009-smoke-v5/leaderboard_evaluator_wsl.py
+@@ -11,6 +11,25 @@
+ Provisional code to evaluate Autonomous Agents for the CARLA Autonomous Driving challenge
+ """
+ from __future__ import print_function
++
++# Deployment overlay only; official model/agent/control sources unchanged.
++import atexit
++import os
++import signal
++_OWN_CARLA_PROCESSES = []
++def _cleanup_own_carla():
++    for process in _OWN_CARLA_PROCESSES:
++        if process.poll() is None:
++            try:
++                os.killpg(process.pid, signal.SIGTERM)
++                process.wait(timeout=15)
++            except ProcessLookupError:
++                pass
++            except Exception:
++                os.killpg(process.pid, signal.SIGKILL)
++                process.wait(timeout=10)
++atexit.register(_cleanup_own_carla)
++
+ from multiprocessing.connection import wait
+ 
+ import traceback
+@@ -88,9 +107,7 @@
+ }
+ 
+ def kill_carla():
+-    kill_process = subprocess.Popen('killall -9 -r CarlaUE4-Linux', shell=True)
+-    kill_process.wait()
+-    time.sleep(5)
++    _cleanup_own_carla()
+ 
+ class LeaderboardEvaluator(object):
+ 
+@@ -119,12 +136,31 @@
+         # to the simulator. Here we'll assume the simulator is accepting
+         # requests in the localhost at port 2000.
+ 
+-        cmd = 'DISPLAY= bash ' + os.path.join(self.carla_path, 'CarlaUE4.sh')+f' -opengl -carla-rpc-port={args.port} -nosound'
++        cmd = ['/bin/bash', os.environ['THINKTWICE_CARLA_LAUNCHER'], '-opengl', f'-carla-rpc-port={args.port}', '-nosound']
+         print(cmd)
+         wait_time = 10
+-        server_process = subprocess.Popen(cmd, shell=True, preexec_fn=os.setsid)
++        server_process = subprocess.Popen(cmd, start_new_session=True)
++        _OWN_CARLA_PROCESSES.append(server_process)
+         print("Process ID:", server_process.pid)
+-        time.sleep(wait_time)
++        # Deployment readiness only: a failed early rpclib connection may not
++        # reconnect. Use a fresh, bounded probe before the original client.
++        ready_deadline = time.monotonic() + 180
++        last_error = None
++        while time.monotonic() < ready_deadline:
++            if server_process.poll() is not None:
++                raise RuntimeError('Own CARLA exited before RPC readiness')
++            try:
++                ready_client = carla.Client(args.host, int(args.port))
++                ready_client.set_timeout(2.0)
++                version = ready_client.get_server_version()
++                print('CARLA RPC ready:', args.host, args.port, version, flush=True)
++                del ready_client
++                break
++            except RuntimeError as exc:
++                last_error = str(exc)
++                time.sleep(2)
++        else:
++            raise RuntimeError('CARLA RPC readiness timed out: ' + str(last_error))
+         self.client = carla.Client(args.host, int(args.port))
+         if args.timeout:
+             self.client_timeout = float(args.timeout)
+@@ -168,7 +204,8 @@
+         Cleanup and delete actors, ScenarioManager and CARLA world
+         """
+ 
+-        self._cleanup()
++        if not getattr(self, '_deployment_cleanup_completed', False):
++            self._cleanup()
+         if hasattr(self, 'manager') and self.manager:
+             del self.manager
+         if hasattr(self, 'world') and self.world:
+@@ -209,6 +246,8 @@
+ 
+         if hasattr(self, 'statistics_manager') and self.statistics_manager:
+             self.statistics_manager.scenario = None
++
++        self._deployment_cleanup_completed = True
+ 
+     def _prepare_ego_vehicles(self, ego_vehicles, wait_for_ego_vehicles=False):
+         """
+@@ -244,7 +283,7 @@
+                 self.ego_vehicles[i].set_transform(ego_vehicles[i].transform)
+ 
+         # sync state
+-        CarlaDataProvider.get_world().tick()
++        CarlaDataProvider.get_world().tick(120.0)
+ 
+     def _load_and_wait_for_world(self, args, town, ego_vehicles=None):
+         """
+@@ -284,7 +323,7 @@
+ 
+         # Wait for the world to be ready
+         if CarlaDataProvider.is_sync_mode():
+-            self.world.tick()
++            self.world.tick(120.0)
+         else:
+             self.world.wait_for_tick()
+ 
+@@ -315,6 +354,7 @@
+         Depending on what code fails, the simulation will either stop the route and
+         continue from the next one, or report a crash and stop.
+         """
++        self._deployment_cleanup_completed = False
+         crash_message = ""
+         entry_status = "Started"
+ 

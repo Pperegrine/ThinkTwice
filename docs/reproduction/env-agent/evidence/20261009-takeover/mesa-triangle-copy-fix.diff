@@ -1,0 +1,11 @@
+--- /opt/thinktwice/src/mesa-24.0.5/src/gallium/drivers/d3d12/d3d12_nir_passes.c.before-triangle-copy-fix
++++ /opt/thinktwice/src/mesa-24.0.5/src/gallium/drivers/d3d12/d3d12_nir_passes.c
+@@ -773,6 +773,8 @@
+    }
+ 
+    nir_metadata_preserve(impl, nir_metadata_none);
++   /* Triangle-strip emission creates aggregate output copies. */
++   NIR_PASS_V(shader, nir_split_var_copies);
+    NIR_PASS_V(shader, nir_lower_var_copies);
+ }
+ 

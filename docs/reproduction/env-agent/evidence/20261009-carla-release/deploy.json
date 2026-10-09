@@ -1,0 +1,58 @@
+{
+  "target": "/opt/thinktwice/carla-0.9.10.1",
+  "archives": [
+    {
+      "filename": "CARLA_0.9.10.1.tar.gz",
+      "bytes": 3956990664,
+      "sha256": "c441c35528c767962e781000ab61600aaa1fa0c2d1bd148effccdb9bab38d583",
+      "entries": 20419,
+      "uncompressed_bytes": 8079789373,
+      "gzip_tar_integrity": true,
+      "first_entries": [
+        "CHANGELOG",
+        "CarlaUE4",
+        "CarlaUE4/Content",
+        "CarlaUE4/Content/Carla",
+        "CarlaUE4/Content/Carla/Static",
+        "CarlaUE4/Content/Carla/Static/Ground",
+        "CarlaUE4/Content/Carla/Static/Ground/Town04",
+        "CarlaUE4/Content/Carla/Static/Ground/Town04/Town04_RoadNode_272.uasset",
+        "CarlaUE4/Content/Carla/Static/Ground/Town04/Town04_RoadNode_253.uasset",
+        "CarlaUE4/Content/Carla/Static/Ground/Town04/Town04_RoadNode_461.uasset"
+      ],
+      "reused_matching_hash_integrity_evidence": true
+    },
+    {
+      "filename": "AdditionalMaps_0.9.10.1.tar.gz",
+      "bytes": 1823090196,
+      "sha256": "b64b1d7b92090de99913c7a221984d54c4c462275b4d727e8cd4a20dc529646c",
+      "entries": 12737,
+      "uncompressed_bytes": 4155966167,
+      "gzip_tar_integrity": true,
+      "first_entries": [
+        "CarlaUE4",
+        "CarlaUE4/Content",
+        "CarlaUE4/Content/Carla",
+        "CarlaUE4/Content/Carla/Static",
+        "CarlaUE4/Content/Carla/Static/Ground",
+        "CarlaUE4/Content/Carla/Static/Ground/Town06",
+        "CarlaUE4/Content/Carla/Static/Ground/Town06/Michigan_Left_RoadNode_54.uasset",
+        "CarlaUE4/Content/Carla/Static/Ground/Town06/Michigan_Left_RoadNode_54.uexp",
+        "CarlaUE4/Content/Carla/Static/Ground/Town06/Michigan_Left_RoadNode_134.uexp",
+        "CarlaUE4/Content/Carla/Static/Ground/Town06/Michigan_Left_RoadNode_669.uasset"
+      ],
+      "root_entries": [
+        "CarlaUE4",
+        "Engine"
+      ]
+    }
+  ],
+  "pass": true,
+  "hash_scope": "Local file identity, not an official checksum",
+  "linux_free_before": 1011935834112,
+  "python_eggs": [
+    "carla-0.9.10-py2.7-linux-x86_64.egg",
+    "carla-0.9.10-py3.7-linux-x86_64.egg"
+  ],
+  "map_procedure": "Extract AdditionalMaps overlay into release root, as upstream transfuser/2022/setup_carla.sh; archives preserved"
+}

@@ -1,0 +1,7 @@
+{
+  "sha256_local": "c32fab734e62c7744dadeb82f7510ff58cc3bca1189d17b16aa99b08afc42249",
+  "http_status": 200,
+  "bytes": 9241179,
+  "prior_attempt": "sandbox curl HTTP000 connection failed; authorized elevated retry succeeded",
+  "url": "https://codeload.github.com/pytorch/vision/tar.gz/refs/tags/v0.13.1"
+}

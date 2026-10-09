@@ -1,0 +1,78 @@
+{
+  "python": "3.7.16 (default, Jan 17 2023, 22:20:44) \n[GCC 11.2.0]",
+  "executable": "/opt/thinktwice/conda/bin/python",
+  "stages": {
+    "cpu_tensor_numpy": {
+      "pass": true,
+      "seconds": 0.8559049289999905,
+      "result": {
+        "numpy": "1.20.3",
+        "numpy_file": "/opt/thinktwice/conda/lib/python3.7/site-packages/numpy/__init__.py",
+        "torch": "1.12.1",
+        "torch_file": "/opt/thinktwice/candidate-site/torch/__init__.py",
+        "shape": [
+          3,
+          4
+        ],
+        "roundtrip": true
+      },
+      "warnings": []
+    },
+    "cuda_tensor_numpy": {
+      "pass": true,
+      "seconds": 554.8558497060001,
+      "result": {
+        "roundtrip": true,
+        "device": "NVIDIA GeForce RTX 5080 Laptop GPU",
+        "cuda": "11.3",
+        "arch": [
+          "sm_86",
+          "compute_86"
+        ]
+      },
+      "warnings": [
+        "\nNVIDIA GeForce RTX 5080 Laptop GPU with CUDA capability sm_120 is not compatible with the current PyTorch installation.\nThe current PyTorch install supports CUDA capabilities sm_86 compute_86.\nIf you want to use the NVIDIA GeForce RTX 5080 Laptop GPU GPU with PyTorch, please check the instructions at https://pytorch.org/get-started/locally/\n"
+      ]
+    },
+    "cuda_finite_sync_bench": {
+      "pass": true,
+      "seconds": 3.4309941469999785,
+      "result": {
+        "first_call_cache_state": "existing driver cache; not cache-cold",
+        "randn_first_ms": 2.101862000017718,
+        "matmul_first_ms": 1202.2277209999856,
+        "conv_first_ms": 2203.755051999906,
+        "matmul_warm_ms": [
+          0.7519050000155403,
+          0.20531999996364902,
+          0.22191599998677702,
+          0.2736469999717883,
+          0.22875799993471446,
+          0.10858600001029117,
+          0.10096299990891566,
+          0.31272599994736083,
+          0.2975549999746363,
+          0.2857289999838031
+        ],
+        "conv_warm_ms": [
+          0.4265139999688472,
+          0.34074699999564473,
+          0.43464999998832354,
+          0.3452469999274399,
+          0.3286899999466186,
+          0.38851199997225194,
+          0.2338990000225749,
+          0.4048989999319019,
+          0.25966699990931374,
+          0.1278240000601727
+        ],
+        "finite": true
+      },
+      "warnings": []
+    }
+  },
+  "driver_cache": {
+    "CUDA_CACHE_PATH": "/opt/thinktwice/cuda-cache",
+    "CUDA_CACHE_MAXSIZE": "4294967296"
+  }
+}

@@ -1,0 +1,800 @@
+{
+  "scope": "saved real CARLA batch replay; not a connected closed loop",
+  "pass": true,
+  "batch": "/mnt/d/Desktop/\u7aef\u5230\u7aef\u81ea\u52a8\u9a7e\u9a76\u5f00\u6e90\u6a21\u578b\u8c03\u7814/.thinktwice-runtime/runs/20261009-smoke10-triangle-index-fix/sensor-inference/first-real-batch.pt",
+  "batch_sha256": "988f428ea008216ea8ef5156503d5200866491c75c5af3076249fea9ae57a4b1",
+  "torch": {
+    "version": "1.12.1",
+    "path": "/opt/thinktwice/candidate-site/torch/__init__.py",
+    "abi": true
+  },
+  "libtorch_cuda_sha256": "ce89a629b94ee4847849f180de2ce4b5e6fe56b20c4be360bede046617191c0b",
+  "stage": "forward_1_pass",
+  "nvrtc_prod": {
+    "pass": true,
+    "result": [
+      6,
+      20
+    ],
+    "runtime_libraries": [
+      "7df0b8600000-7df0baa6c000 r-xp 00000000 08:30 47427                      /opt/thinktwice/cuda113-ptx/lib/libnvrtc.so.11.3.122",
+      "7df0baa6c000-7df0bac6b000 ---p 0246c000 08:30 47427                      /opt/thinktwice/cuda113-ptx/lib/libnvrtc.so.11.3.122",
+      "7df0bac6b000-7df0bb18f000 r--p 0246b000 08:30 47427                      /opt/thinktwice/cuda113-ptx/lib/libnvrtc.so.11.3.122",
+      "7df0bb18f000-7df0bb255000 rw-p 0298f000 08:30 47427                      /opt/thinktwice/cuda113-ptx/lib/libnvrtc.so.11.3.122",
+      "7df0bb337000-7df0bb339000 rw-p 02a55000 08:30 47427                      /opt/thinktwice/cuda113-ptx/lib/libnvrtc.so.11.3.122",
+      "7df0cca00000-7df0cd05d000 r-xp 00000000 08:30 47425                      /opt/thinktwice/cuda113-ptx/lib/libnvrtc-builtins.so.11.3.122",
+      "7df0cd05d000-7df0cd25c000 ---p 0065d000 08:30 47425                      /opt/thinktwice/cuda113-ptx/lib/libnvrtc-builtins.so.11.3.122",
+      "7df0cd25c000-7df0cd25d000 rw-p 0065c000 08:30 47425                      /opt/thinktwice/cuda113-ptx/lib/libnvrtc-builtins.so.11.3.122",
+      "7df0cd25d000-7df0cd25e000 rw-p 0065e000 08:30 47425                      /opt/thinktwice/cuda113-ptx/lib/libnvrtc-builtins.so.11.3.122",
+      "7df0e8e00000-7df0e945d000 r-xp 00000000 08:30 53888                      /opt/thinktwice/conda/lib/python3.7/site-packages/cumm_cu113.libs/libnvrtc-builtins-4730a239.so.11.3.109",
+      "7df0e945d000-7df0e965c000 ---p 0065d000 08:30 53888                      /opt/thinktwice/conda/lib/python3.7/site-packages/cumm_cu113.libs/libnvrtc-builtins-4730a239.so.11.3.109",
+      "7df0e965c000-7df0e965d000 rw-p 0065c000 08:30 53888                      /opt/thinktwice/conda/lib/python3.7/site-packages/cumm_cu113.libs/libnvrtc-builtins-4730a239.so.11.3.109",
+      "7df0e965d000-7df0e965e000 rw-p 0065e000 08:30 53888                      /opt/thinktwice/conda/lib/python3.7/site-packages/cumm_cu113.libs/libnvrtc-builtins-4730a239.so.11.3.109",
+      "7df0e9800000-7df0ebc6c000 r-xp 00000000 08:30 53889                      /opt/thinktwice/conda/lib/python3.7/site-packages/cumm_cu113.libs/libnvrtc-1ea278b5.so.11.3.109",
+      "7df0ebc6c000-7df0ebe6b000 ---p 0246c000 08:30 53889                      /opt/thinktwice/conda/lib/python3.7/site-packages/cumm_cu113.libs/libnvrtc-1ea278b5.so.11.3.109",
+      "7df0ebe6b000-7df0ec38f000 r--p 0246b000 08:30 53889                      /opt/thinktwice/conda/lib/python3.7/site-packages/cumm_cu113.libs/libnvrtc-1ea278b5.so.11.3.109",
+      "7df0ec38f000-7df0ec455000 rw-p 0298f000 08:30 53889                      /opt/thinktwice/conda/lib/python3.7/site-packages/cumm_cu113.libs/libnvrtc-1ea278b5.so.11.3.109",
+      "7df0ec537000-7df0ec539000 rw-p 02a55000 08:30 53889                      /opt/thinktwice/conda/lib/python3.7/site-packages/cumm_cu113.libs/libnvrtc-1ea278b5.so.11.3.109"
+    ]
+  },
+  "refine_num": 5,
+  "checkpoint_keys": 1344,
+  "inputs": {
+    "img_metas": [
+      [
+        {
+          "can_bus": {
+            "type": "ndarray"
+          },
+          "cam_intrinsic": {
+            "shape": [
+              4,
+              3,
+              3
+            ],
+            "dtype": "torch.float32",
+            "finite": true
+          },
+          "lidar2cam": {
+            "shape": [
+              4,
+              4,
+              4
+            ],
+            "dtype": "torch.float32",
+            "finite": true
+          },
+          "lidar2img": {
+            "shape": [
+              4,
+              4,
+              4
+            ],
+            "dtype": "torch.float32",
+            "finite": true
+          },
+          "img_shape": [
+            [
+              {
+                "type": "int"
+              },
+              {
+                "type": "int"
+              }
+            ],
+            [
+              {
+                "type": "int"
+              },
+              {
+                "type": "int"
+              }
+            ],
+            [
+              {
+                "type": "int"
+              },
+              {
+                "type": "int"
+              }
+            ],
+            [
+              {
+                "type": "int"
+              },
+              {
+                "type": "int"
+              }
+            ]
+          ],
+          "ori_shape": [
+            [
+              {
+                "type": "int"
+              },
+              {
+                "type": "int"
+              }
+            ],
+            [
+              {
+                "type": "int"
+              },
+              {
+                "type": "int"
+              }
+            ],
+            [
+              {
+                "type": "int"
+              },
+              {
+                "type": "int"
+              }
+            ],
+            [
+              {
+                "type": "int"
+              },
+              {
+                "type": "int"
+              }
+            ]
+          ],
+          "ida_mats": {
+            "shape": [
+              4,
+              4,
+              4
+            ],
+            "dtype": "torch.float32",
+            "finite": true
+          },
+          "points_size": [
+            {
+              "type": "int"
+            },
+            {
+              "type": "int"
+            }
+          ],
+          "prev_bev": {
+            "type": "bool"
+          },
+          "curr2key": {
+            "shape": [
+              4,
+              4
+            ],
+            "dtype": "torch.float32",
+            "finite": true
+          },
+          "currlidar2keycam": {
+            "shape": [
+              4,
+              4,
+              4
+            ],
+            "dtype": "torch.float32",
+            "finite": true
+          }
+        },
+        {
+          "can_bus": {
+            "type": "ndarray"
+          },
+          "cam_intrinsic": {
+            "shape": [
+              4,
+              3,
+              3
+            ],
+            "dtype": "torch.float32",
+            "finite": true
+          },
+          "lidar2cam": {
+            "shape": [
+              4,
+              4,
+              4
+            ],
+            "dtype": "torch.float32",
+            "finite": true
+          },
+          "lidar2img": {
+            "shape": [
+              4,
+              4,
+              4
+            ],
+            "dtype": "torch.float32",
+            "finite": true
+          },
+          "img_shape": [
+            [
+              {
+                "type": "int"
+              },
+              {
+                "type": "int"
+              }
+            ],
+            [
+              {
+                "type": "int"
+              },
+              {
+                "type": "int"
+              }
+            ],
+            [
+              {
+                "type": "int"
+              },
+              {
+                "type": "int"
+              }
+            ],
+            [
+              {
+                "type": "int"
+              },
+              {
+                "type": "int"
+              }
+            ]
+          ],
+          "ori_shape": [
+            [
+              {
+                "type": "int"
+              },
+              {
+                "type": "int"
+              }
+            ],
+            [
+              {
+                "type": "int"
+              },
+              {
+                "type": "int"
+              }
+            ],
+            [
+              {
+                "type": "int"
+              },
+              {
+                "type": "int"
+              }
+            ],
+            [
+              {
+                "type": "int"
+              },
+              {
+                "type": "int"
+              }
+            ]
+          ],
+          "ida_mats": {
+            "shape": [
+              4,
+              4,
+              4
+            ],
+            "dtype": "torch.float32",
+            "finite": true
+          },
+          "points_size": [
+            {
+              "type": "int"
+            },
+            {
+              "type": "int"
+            }
+          ],
+          "prev_bev": {
+            "type": "bool"
+          },
+          "curr2key": {
+            "shape": [
+              4,
+              4
+            ],
+            "dtype": "torch.float32",
+            "finite": true
+          },
+          "currlidar2keycam": {
+            "shape": [
+              4,
+              4,
+              4
+            ],
+            "dtype": "torch.float32",
+            "finite": true
+          }
+        }
+      ]
+    ],
+    "img": {
+      "shape": [
+        1,
+        2,
+        4,
+        3,
+        448,
+        896
+      ],
+      "dtype": "torch.float32",
+      "finite": true
+    },
+    "points": {
+      "shape": [
+        1,
+        1,
+        62545,
+        5
+      ],
+      "dtype": "torch.float32",
+      "finite": true
+    },
+    "waypoints": {
+      "shape": [
+        1,
+        4
+      ],
+      "dtype": "torch.float64",
+      "finite": true
+    },
+    "target_point": {
+      "shape": [
+        1,
+        2
+      ],
+      "dtype": "torch.float64",
+      "finite": true
+    },
+    "target_command": {
+      "shape": [
+        1,
+        6
+      ],
+      "dtype": "torch.int64",
+      "finite": true
+    },
+    "target_command_raw": {
+      "shape": [
+        1
+      ],
+      "dtype": "torch.int64",
+      "finite": true
+    },
+    "speed": {
+      "shape": [
+        1
+      ],
+      "dtype": "torch.float64",
+      "finite": true
+    },
+    "value": {
+      "shape": [
+        1
+      ],
+      "dtype": "torch.int64",
+      "finite": true
+    },
+    "feature": {
+      "shape": [
+        1,
+        1
+      ],
+      "dtype": "torch.float64",
+      "finite": true
+    },
+    "future_feature": {
+      "shape": [
+        1,
+        4,
+        1
+      ],
+      "dtype": "torch.float64",
+      "finite": true
+    },
+    "action_sigma": {
+      "shape": [
+        1,
+        2
+      ],
+      "dtype": "torch.float64",
+      "finite": true
+    },
+    "action_mu": {
+      "shape": [
+        1,
+        2
+      ],
+      "dtype": "torch.float64",
+      "finite": true
+    },
+    "future_action_mu": {
+      "shape": [
+        1,
+        4,
+        2
+      ],
+      "dtype": "torch.float64",
+      "finite": true
+    },
+    "future_action_sigma": {
+      "shape": [
+        1,
+        4,
+        2
+      ],
+      "dtype": "torch.float64",
+      "finite": true
+    }
+  },
+  "invocations": [
+    {
+      "index": 0,
+      "seconds_synchronized": 4.833523859000252,
+      "outputs": {
+        "bev_feature": {
+          "shape": [
+            1,
+            32,
+            21,
+            21
+          ],
+          "dtype": "torch.float32",
+          "finite": true
+        },
+        "pred_speed": {
+          "shape": [
+            1,
+            1
+          ],
+          "dtype": "torch.float32",
+          "finite": true
+        },
+        "pred_value_traj": {
+          "shape": [
+            1,
+            1
+          ],
+          "dtype": "torch.float32",
+          "finite": true
+        },
+        "pred_features_traj": {
+          "shape": [
+            1,
+            256
+          ],
+          "dtype": "torch.float32",
+          "finite": true
+        },
+        "pred_value_ctrl": {
+          "shape": [
+            1,
+            1
+          ],
+          "dtype": "torch.float32",
+          "finite": true
+        },
+        "pred_features_ctrl": {
+          "shape": [
+            1,
+            256
+          ],
+          "dtype": "torch.float32",
+          "finite": true
+        },
+        "refine_flattned_BEV_feature": {
+          "shape": [
+            1,
+            5,
+            256
+          ],
+          "dtype": "torch.float32",
+          "finite": true
+        },
+        "refine_BEV_feature": {
+          "shape": [
+            1,
+            5,
+            32,
+            21,
+            21
+          ],
+          "dtype": "torch.float32",
+          "finite": true
+        },
+        "refine_future_BEV_feature": {
+          "shape": [
+            1,
+            5,
+            4,
+            32,
+            21,
+            21
+          ],
+          "dtype": "torch.float32",
+          "finite": true
+        },
+        "pred_wp": {
+          "shape": [
+            1,
+            6,
+            4,
+            2
+          ],
+          "dtype": "torch.float32",
+          "finite": true
+        },
+        "mu_branches": {
+          "shape": [
+            1,
+            6,
+            2
+          ],
+          "dtype": "torch.float32",
+          "finite": true
+        },
+        "sigma_branches": {
+          "shape": [
+            1,
+            6,
+            2
+          ],
+          "dtype": "torch.float32",
+          "finite": true
+        },
+        "future_mu": {
+          "shape": [
+            1,
+            6,
+            3,
+            2
+          ],
+          "dtype": "torch.float32",
+          "finite": true
+        },
+        "future_sigma": {
+          "shape": [
+            1,
+            6,
+            3,
+            2
+          ],
+          "dtype": "torch.float32",
+          "finite": true
+        }
+      },
+      "six_levels_finite": {
+        "pred_wp": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "mu_branches": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "sigma_branches": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "future_mu": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "future_sigma": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "pass": true
+    },
+    {
+      "index": 1,
+      "seconds_synchronized": 0.3389704790001815,
+      "outputs": {
+        "bev_feature": {
+          "shape": [
+            1,
+            32,
+            21,
+            21
+          ],
+          "dtype": "torch.float32",
+          "finite": true
+        },
+        "pred_speed": {
+          "shape": [
+            1,
+            1
+          ],
+          "dtype": "torch.float32",
+          "finite": true
+        },
+        "pred_value_traj": {
+          "shape": [
+            1,
+            1
+          ],
+          "dtype": "torch.float32",
+          "finite": true
+        },
+        "pred_features_traj": {
+          "shape": [
+            1,
+            256
+          ],
+          "dtype": "torch.float32",
+          "finite": true
+        },
+        "pred_value_ctrl": {
+          "shape": [
+            1,
+            1
+          ],
+          "dtype": "torch.float32",
+          "finite": true
+        },
+        "pred_features_ctrl": {
+          "shape": [
+            1,
+            256
+          ],
+          "dtype": "torch.float32",
+          "finite": true
+        },
+        "refine_flattned_BEV_feature": {
+          "shape": [
+            1,
+            5,
+            256
+          ],
+          "dtype": "torch.float32",
+          "finite": true
+        },
+        "refine_BEV_feature": {
+          "shape": [
+            1,
+            5,
+            32,
+            21,
+            21
+          ],
+          "dtype": "torch.float32",
+          "finite": true
+        },
+        "refine_future_BEV_feature": {
+          "shape": [
+            1,
+            5,
+            4,
+            32,
+            21,
+            21
+          ],
+          "dtype": "torch.float32",
+          "finite": true
+        },
+        "pred_wp": {
+          "shape": [
+            1,
+            6,
+            4,
+            2
+          ],
+          "dtype": "torch.float32",
+          "finite": true
+        },
+        "mu_branches": {
+          "shape": [
+            1,
+            6,
+            2
+          ],
+          "dtype": "torch.float32",
+          "finite": true
+        },
+        "sigma_branches": {
+          "shape": [
+            1,
+            6,
+            2
+          ],
+          "dtype": "torch.float32",
+          "finite": true
+        },
+        "future_mu": {
+          "shape": [
+            1,
+            6,
+            3,
+            2
+          ],
+          "dtype": "torch.float32",
+          "finite": true
+        },
+        "future_sigma": {
+          "shape": [
+            1,
+            6,
+            3,
+            2
+          ],
+          "dtype": "torch.float32",
+          "finite": true
+        }
+      },
+      "six_levels_finite": {
+        "pred_wp": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "mu_branches": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "sigma_branches": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "future_mu": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "future_sigma": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "pass": true
+    }
+  ]
+}

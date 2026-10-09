@@ -1,0 +1,24 @@
+{
+  "command": [
+    "/bin/bash",
+    "/opt/thinktwice/carla-0.9.10.1/CarlaUE4.sh",
+    "-opengl",
+    "-carla-rpc-port=22123",
+    "-nosound"
+  ],
+  "display": ":0",
+  "uid": 1000,
+  "pass": true,
+  "graphics_environment": {
+    "LD_LIBRARY_PATH": "/opt/thinktwice/mesa24/lib:/usr/lib/wsl/lib",
+    "LIBGL_DRIVERS_PATH": "/opt/thinktwice/mesa24/lib/dri",
+    "MESA_LOADER_DRIVER_OVERRIDE": null,
+    "GALLIUM_DRIVER": "d3d12",
+    "MESA_D3D12_DEFAULT_ADAPTER_NAME": "NVIDIA",
+    "LD_PRELOAD": null,
+    "allow_glsl_cross_stage_interpolation_mismatch": "true"
+  },
+  "pid": 2793,
+  "probe_returncode": 0,
+  "server_returncode": -15
+}

@@ -1,0 +1,57 @@
+{
+  "torch": "1.12.1+cu113",
+  "torch_path": "/opt/thinktwice/conda/lib/python3.7/site-packages/torch/__init__.py",
+  "cuda": "11.3",
+  "cudnn": 8302,
+  "stages": {
+    "cublas_matmul": {
+      "pass": true,
+      "result": {
+        "first_seconds": 1.4762442960000044,
+        "warm_seconds": [
+          0.0001345280002169602,
+          6.785999994463054e-05,
+          4.2736000068543945e-05,
+          2.9399000140983844e-05,
+          3.2310999813489616e-05,
+          3.0823000088275876e-05,
+          3.1567999940307345e-05,
+          3.379899999345071e-05,
+          3.076999973927741e-05,
+          3.0592000257456675e-05
+        ],
+        "shape": [
+          32,
+          32
+        ],
+        "reference_match": true
+      }
+    },
+    "cudnn_convolution": {
+      "pass": true,
+      "result": {
+        "first_seconds": 323.6612284990001,
+        "warm_seconds": [
+          0.0007036169999992126,
+          0.00015878199974395102,
+          0.0001766619998306851,
+          4.8194000100920675e-05,
+          3.991699986727326e-05,
+          3.894199971909984e-05,
+          7.421500004056725e-05,
+          7.011700017756084e-05,
+          3.5753999782173196e-05,
+          3.428999980314984e-05
+        ],
+        "shape": [
+          1,
+          4,
+          16,
+          16
+        ],
+        "reference_match": true
+      }
+    }
+  },
+  "cache_state": "existing driver cache; first invocation is not asserted cache-cold"
+}

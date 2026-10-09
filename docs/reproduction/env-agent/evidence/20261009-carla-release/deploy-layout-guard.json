@@ -1,0 +1,28 @@
+{
+  "target": "/opt/thinktwice/carla-0.9.10.1",
+  "archives": [
+    {
+      "filename": "CARLA_0.9.10.1.tar.gz",
+      "bytes": 3956990664,
+      "sha256": "c441c35528c767962e781000ab61600aaa1fa0c2d1bd148effccdb9bab38d583",
+      "entries": 20419,
+      "uncompressed_bytes": 8079789373,
+      "gzip_tar_integrity": true,
+      "first_entries": [
+        "CHANGELOG",
+        "CarlaUE4",
+        "CarlaUE4/Content",
+        "CarlaUE4/Content/Carla",
+        "CarlaUE4/Content/Carla/Static",
+        "CarlaUE4/Content/Carla/Static/Ground",
+        "CarlaUE4/Content/Carla/Static/Ground/Town04",
+        "CarlaUE4/Content/Carla/Static/Ground/Town04/Town04_RoadNode_272.uasset",
+        "CarlaUE4/Content/Carla/Static/Ground/Town04/Town04_RoadNode_253.uasset",
+        "CarlaUE4/Content/Carla/Static/Ground/Town04/Town04_RoadNode_461.uasset"
+      ]
+    }
+  ],
+  "pass": false,
+  "hash_scope": "Local file identity, not an official checksum",
+  "error": "Traceback (most recent call last):\n  File \"ThinkTwice/docs/reproduction/env-agent/scripts/deploy_carla_release.py\", line 57, in <module>\n    raise RuntimeError('Unexpected maps layout; inspect import procedure')\nRuntimeError: Unexpected maps layout; inspect import procedure\n"
+}

@@ -1,0 +1,128 @@
+"""Observation-only subclass: original sensors, inference, refinement and controls.
+
+Use with the deployment evaluator only after all CUDA operator gates pass.
+The first real batch/output is saved once. No tensor/control value is changed.
+"""
+import json
+import os
+from pathlib import Path
+import time
+import traceback
+
+import numpy as np
+import torch
+from team_code.thinktwice_agent import ThinkTwiceAgent
+
+
+def get_entry_point():
+    return 'ObservedThinkTwiceAgent'
+
+
+def describe(value):
+    if torch.is_tensor(value):
+        return {'shape': list(value.shape), 'dtype': str(value.dtype),
+                'device': str(value.device),
+                'finite': bool(torch.isfinite(value).all().item())}
+    if isinstance(value, np.ndarray):
+        return {'shape': list(value.shape), 'dtype': str(value.dtype),
+                'finite': bool(np.isfinite(value).all())}
+    if isinstance(value, dict):
+        return {str(k): describe(v) for k, v in value.items()}
+    if isinstance(value, (list, tuple)):
+        return [describe(v) for v in value]
+    return {'type': type(value).__name__}
+
+
+def cpu_copy(value):
+    if torch.is_tensor(value):
+        return value.detach().cpu()
+    if isinstance(value, dict):
+        return {k: cpu_copy(v) for k, v in value.items()}
+    if isinstance(value, (list, tuple)):
+        return type(value)(cpu_copy(v) for v in value)
+    return value
+
+
+def all_finite(description):
+    if isinstance(description, dict):
+        return description.get('finite', True) and all(all_finite(v) for v in description.values())
+    if isinstance(description, list):
+        return all(all_finite(v) for v in description)
+    return True
+
+
+class ObservedThinkTwiceAgent(ThinkTwiceAgent):
+    def _record(self, event):
+        event['wall_time'] = time.time()
+        with (self._evidence / 'agent-events.jsonl').open('a', encoding='utf-8') as f:
+            f.write(json.dumps(event, allow_nan=False) + '\n')
+
+    def setup(self, path_to_conf_file):
+        self._evidence = Path(os.environ['THINKTWICE_SENSOR_EVIDENCE'])
+        self._evidence.mkdir(parents=True, exist_ok=True)
+        self._inference_count = 0
+        self._sensor_recorded = False
+        try:
+            super().setup(path_to_conf_file)
+            assert self.cfg.cfg.refine_num == 5
+            original_forward = self.model.forward_inference
+
+            def observed_forward(batch):
+                first = self._inference_count == 0
+                if first:
+                    torch.save(cpu_copy(batch), str(self._evidence / 'first-real-batch.pt'))
+                torch.cuda.synchronize()
+                start = time.perf_counter()
+                prediction = original_forward(batch)
+                torch.cuda.synchronize()
+                elapsed = time.perf_counter() - start
+                outputs = describe(prediction)
+                levels = {}
+                for key in ('pred_wp', 'mu_branches', 'sigma_branches',
+                            'future_mu', 'future_sigma'):
+                    value = prediction[key]
+                    levels[key] = [bool(torch.isfinite(value[:, i]).all().item())
+                                   for i in range(value.shape[1])]
+                valid = all_finite(outputs) and all(len(v) == 6 and all(v) for v in levels.values())
+                if first:
+                    torch.save(cpu_copy(prediction), str(self._evidence / 'first-real-prediction.pt'))
+                self._record({'event': 'inference', 'step': self.step,
+                              'inference_index': self._inference_count,
+                              'inputs': describe(batch) if first else None,
+                              'outputs': outputs, 'six_levels_finite': levels,
+                              'pass': valid,
+                              'seconds_synchronized': elapsed,
+                              'timing_scope': 'first invocation' if first else 'subsequent invocation',
+                              'cache_state': 'existing driver cache; not asserted cache-cold'})
+                assert valid, 'Prediction finite/six-level checks failed; see recorded output shapes and snapshot'
+                self._inference_count += 1
+                return prediction
+
+            self.model.forward_inference = observed_forward
+            self._record({'event': 'setup', 'refine_num': 5,
+                          'observation_only': True, 'sensors': self.sensors()})
+        except Exception:
+            self._record({'event': 'failure', 'stage': 'setup', 'error': traceback.format_exc()})
+            raise
+
+    def run_step(self, input_data, timestamp):
+        try:
+            if not self._sensor_recorded:
+                self._record({'event': 'real_sensor_input', 'timestamp': timestamp,
+                              'sensors': describe(input_data)})
+                self._sensor_recorded = True
+            control = super().run_step(input_data, timestamp)
+            values = {k: float(getattr(control, k)) for k in ('steer', 'throttle', 'brake')}
+            valid = (all(np.isfinite(v) for v in values.values())
+                     and -1 <= values['steer'] <= 1
+                     and 0 <= values['throttle'] <= 1
+                     and 0 <= values['brake'] <= 1)
+            self._record({'event': 'control', 'step': self.step,
+                          'timestamp': timestamp, 'values': values, 'valid': valid,
+                          'inference_count': self._inference_count})
+            assert valid, values
+            return control
+        except Exception:
+            self._record({'event': 'failure', 'stage': 'run_step', 'step': self.step,
+                          'error': traceback.format_exc()})
+            raise

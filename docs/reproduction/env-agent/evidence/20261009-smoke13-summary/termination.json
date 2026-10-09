@@ -1,0 +1,9 @@
+{
+  "reason": "user_selected_short_smoke_threshold_reached",
+  "minimum_inferences": 200,
+  "observed_before_signal": 200,
+  "signal": "SIGINT to own original evaluator handler",
+  "evaluator_pid": 40,
+  "wall_time": 1791553776.9770503,
+  "full_route_completion_requested": false
+}

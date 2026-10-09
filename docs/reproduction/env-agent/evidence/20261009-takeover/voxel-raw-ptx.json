@@ -1,0 +1,15 @@
+{
+  "op": "voxel_raw",
+  "torch": "1.12.1+cu113",
+  "cuda": "11.3",
+  "pass": true,
+  "scope": "raw official CUDA extension; wrapper aten allocations bypassed in diagnostic only",
+  "shape": [
+    1,
+    2,
+    2,
+    2
+  ],
+  "finite": true,
+  "seconds": 0.9220389939999905
+}

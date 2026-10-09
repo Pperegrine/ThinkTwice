@@ -1,0 +1,69 @@
+[
+  {
+    "path": "/opt/thinktwice/voxel-candidate/ops/voxel_pooling/voxel_pooling_ext.cpython-37m-x86_64-linux-gnu.so",
+    "bytes": 5295600,
+    "sha256_local": "4059dcadf283fa4778ced39bc6ec3685e4ffdeaf988b762928474c3366699b4f",
+    "readelf_returncode": 0,
+    "needed": [
+      "0x0000000000000001 (NEEDED)             Shared library: [libc10.so]",
+      "0x0000000000000001 (NEEDED)             Shared library: [libtorch.so]",
+      "0x0000000000000001 (NEEDED)             Shared library: [libtorch_cpu.so]",
+      "0x0000000000000001 (NEEDED)             Shared library: [libtorch_python.so]",
+      "0x0000000000000001 (NEEDED)             Shared library: [libcudart.so.11.0]",
+      "0x0000000000000001 (NEEDED)             Shared library: [libc10_cuda.so]",
+      "0x0000000000000001 (NEEDED)             Shared library: [libtorch_cuda.so]",
+      "0x0000000000000001 (NEEDED)             Shared library: [libstdc++.so.6]",
+      "0x0000000000000001 (NEEDED)             Shared library: [libm.so.6]",
+      "0x0000000000000001 (NEEDED)             Shared library: [libgcc_s.so.1]",
+      "0x0000000000000001 (NEEDED)             Shared library: [libpthread.so.0]",
+      "0x0000000000000001 (NEEDED)             Shared library: [libc.so.6]"
+    ],
+    "ptx_listing": "/mnt/d/Desktop/\u7aef\u5230\u7aef\u81ea\u52a8\u9a7e\u9a76\u5f00\u6e90\u6a21\u578b\u8c03\u7814/ThinkTwice/docs/reproduction/env-agent/evidence/20261009-takeover/relinked-extension-0-cuobjdump-ptx.txt",
+    "scope": "PTX and link identity only, not numerical execution"
+  },
+  {
+    "path": "/opt/thinktwice/candidate-site/mmcv/_ext.cpython-37m-x86_64-linux-gnu.so",
+    "bytes": 88510320,
+    "sha256_local": "6a4fefc4ee3b18479f787932b9ecb3a3f55d715e7ebc52c01b69c7f918b821aa",
+    "readelf_returncode": 0,
+    "needed": [
+      "0x0000000000000001 (NEEDED)             Shared library: [libc10.so]",
+      "0x0000000000000001 (NEEDED)             Shared library: [libtorch.so]",
+      "0x0000000000000001 (NEEDED)             Shared library: [libtorch_cpu.so]",
+      "0x0000000000000001 (NEEDED)             Shared library: [libtorch_python.so]",
+      "0x0000000000000001 (NEEDED)             Shared library: [libcudart.so.11.0]",
+      "0x0000000000000001 (NEEDED)             Shared library: [libc10_cuda.so]",
+      "0x0000000000000001 (NEEDED)             Shared library: [libtorch_cuda.so]",
+      "0x0000000000000001 (NEEDED)             Shared library: [libstdc++.so.6]",
+      "0x0000000000000001 (NEEDED)             Shared library: [libm.so.6]",
+      "0x0000000000000001 (NEEDED)             Shared library: [libgcc_s.so.1]",
+      "0x0000000000000001 (NEEDED)             Shared library: [libpthread.so.0]",
+      "0x0000000000000001 (NEEDED)             Shared library: [libc.so.6]"
+    ],
+    "ptx_listing": "/mnt/d/Desktop/\u7aef\u5230\u7aef\u81ea\u52a8\u9a7e\u9a76\u5f00\u6e90\u6a21\u578b\u8c03\u7814/ThinkTwice/docs/reproduction/env-agent/evidence/20261009-takeover/relinked-extension-1-cuobjdump-ptx.txt",
+    "scope": "PTX and link identity only, not numerical execution"
+  },
+  {
+    "path": "/opt/thinktwice/candidate-site/torchvision/_C.so",
+    "bytes": 45790544,
+    "sha256_local": "0d5270491e2bbfb59eab29dfc820b141476dca231862eb0361ceb215b93bd61e",
+    "readelf_returncode": 0,
+    "needed": [
+      "0x0000000000000001 (NEEDED)             Shared library: [libc10.so]",
+      "0x0000000000000001 (NEEDED)             Shared library: [libtorch.so]",
+      "0x0000000000000001 (NEEDED)             Shared library: [libtorch_cpu.so]",
+      "0x0000000000000001 (NEEDED)             Shared library: [libtorch_python.so]",
+      "0x0000000000000001 (NEEDED)             Shared library: [libcudart.so.11.0]",
+      "0x0000000000000001 (NEEDED)             Shared library: [libc10_cuda.so]",
+      "0x0000000000000001 (NEEDED)             Shared library: [libtorch_cuda.so]",
+      "0x0000000000000001 (NEEDED)             Shared library: [libstdc++.so.6]",
+      "0x0000000000000001 (NEEDED)             Shared library: [libm.so.6]",
+      "0x0000000000000001 (NEEDED)             Shared library: [libgcc_s.so.1]",
+      "0x0000000000000001 (NEEDED)             Shared library: [libpthread.so.0]",
+      "0x0000000000000001 (NEEDED)             Shared library: [libc.so.6]",
+      "0x0000000000000001 (NEEDED)             Shared library: [ld-linux-x86-64.so.2]"
+    ],
+    "ptx_listing": "/mnt/d/Desktop/\u7aef\u5230\u7aef\u81ea\u52a8\u9a7e\u9a76\u5f00\u6e90\u6a21\u578b\u8c03\u7814/ThinkTwice/docs/reproduction/env-agent/evidence/20261009-takeover/relinked-extension-2-cuobjdump-ptx.txt",
+    "scope": "PTX and link identity only, not numerical execution"
+  }
+]

@@ -1,0 +1,270 @@
+{
+  "total_objects": 524,
+  "invalid": [
+    {
+      "path": "/opt/thinktwice/src/pytorch-1.12.1/build/nccl/obj/collectives/device/all_gather_sum_u64.o",
+      "size": 0,
+      "magic": ""
+    },
+    {
+      "path": "/opt/thinktwice/src/pytorch-1.12.1/build/nccl/obj/collectives/device/all_gather_prod_i32.o",
+      "size": 0,
+      "magic": ""
+    },
+    {
+      "path": "/opt/thinktwice/src/pytorch-1.12.1/build/nccl/obj/collectives/device/all_reduce_avg_f32.o",
+      "size": 0,
+      "magic": ""
+    },
+    {
+      "path": "/opt/thinktwice/src/pytorch-1.12.1/build/nccl/obj/collectives/device/all_gather_prod_i8.o",
+      "size": 0,
+      "magic": ""
+    },
+    {
+      "path": "/opt/thinktwice/src/pytorch-1.12.1/build/nccl/obj/collectives/device/all_gather_min_i8.o",
+      "size": 0,
+      "magic": ""
+    },
+    {
+      "path": "/opt/thinktwice/src/pytorch-1.12.1/build/nccl/obj/collectives/device/all_gather_prod_i64.o",
+      "size": 0,
+      "magic": ""
+    },
+    {
+      "path": "/opt/thinktwice/src/pytorch-1.12.1/build/nccl/obj/collectives/device/all_gather_sum_i64.o",
+      "size": 0,
+      "magic": ""
+    },
+    {
+      "path": "/opt/thinktwice/src/pytorch-1.12.1/build/nccl/obj/collectives/device/all_gather_sum_bf16.o",
+      "size": 0,
+      "magic": ""
+    },
+    {
+      "path": "/opt/thinktwice/src/pytorch-1.12.1/build/nccl/obj/collectives/device/all_gather_sum_u8.o",
+      "size": 0,
+      "magic": ""
+    },
+    {
+      "path": "/opt/thinktwice/src/pytorch-1.12.1/build/nccl/obj/collectives/device/all_gather_prod_f16.o",
+      "size": 0,
+      "magic": ""
+    },
+    {
+      "path": "/opt/thinktwice/src/pytorch-1.12.1/build/nccl/obj/collectives/device/all_gather_prod_u32.o",
+      "size": 0,
+      "magic": ""
+    },
+    {
+      "path": "/opt/thinktwice/src/pytorch-1.12.1/build/nccl/obj/collectives/device/all_gather_sum_u32.o",
+      "size": 0,
+      "magic": ""
+    },
+    {
+      "path": "/opt/thinktwice/src/pytorch-1.12.1/build/nccl/obj/collectives/device/all_gather_prod_bf16.o",
+      "size": 0,
+      "magic": ""
+    },
+    {
+      "path": "/opt/thinktwice/src/pytorch-1.12.1/build/nccl/obj/collectives/device/all_gather_prod_u64.o",
+      "size": 0,
+      "magic": ""
+    },
+    {
+      "path": "/opt/thinktwice/src/pytorch-1.12.1/build/nccl/obj/collectives/device/all_gather_prod_f32.o",
+      "size": 0,
+      "magic": ""
+    },
+    {
+      "path": "/opt/thinktwice/src/pytorch-1.12.1/build/nccl/obj/collectives/device/all_gather_sum_i8.o",
+      "size": 0,
+      "magic": ""
+    },
+    {
+      "path": "/opt/thinktwice/src/pytorch-1.12.1/build/nccl/obj/collectives/device/all_gather_prod_u8.o",
+      "size": 0,
+      "magic": ""
+    },
+    {
+      "path": "/opt/thinktwice/src/pytorch-1.12.1/build/nccl/obj/collectives/device/all_gather_prod_f64.o",
+      "size": 0,
+      "magic": ""
+    },
+    {
+      "path": "/opt/thinktwice/src/pytorch-1.12.1/build/nccl/obj/collectives/device/all_gather_sum_f64.o",
+      "size": 0,
+      "magic": ""
+    },
+    {
+      "path": "/opt/thinktwice/src/pytorch-1.12.1/build/nccl/obj/collectives/device/all_reduce_avg_f16.o",
+      "size": 0,
+      "magic": ""
+    },
+    {
+      "path": "/opt/thinktwice/src/pytorch-1.12.1/build/nccl/obj/collectives/device/all_gather_sum_i32.o",
+      "size": 0,
+      "magic": ""
+    },
+    {
+      "path": "/opt/thinktwice/src/pytorch-1.12.1/build/nccl/obj/collectives/device/all_gather_sum_f16.o",
+      "size": 0,
+      "magic": ""
+    },
+    {
+      "path": "/opt/thinktwice/src/pytorch-1.12.1/build/nccl/obj/collectives/device/all_gather_sum_f32.o",
+      "size": 0,
+      "magic": ""
+    },
+    {
+      "path": "/opt/thinktwice/src/pytorch-1.12.1/build/nccl/obj/collectives/device/all_reduce_avg_f64.o",
+      "size": 0,
+      "magic": ""
+    },
+    {
+      "path": "/opt/thinktwice/src/pytorch-1.12.1/build/nccl/obj/collectives/device/all_gather_min_u8.o",
+      "size": 0,
+      "magic": ""
+    },
+    {
+      "path": "/opt/thinktwice/src/pytorch-1.12.1/build/nccl/obj/collectives/device/all_reduce_avg_u64.o",
+      "size": 321416,
+      "magic": "00000000"
+    },
+    {
+      "path": "/opt/thinktwice/src/pytorch-1.12.1/build/nccl/obj/collectives/device/all_reduce_avg_bf16.o",
+      "size": 0,
+      "magic": ""
+    },
+    {
+      "path": "/opt/thinktwice/src/pytorch-1.12.1/build/third_party/protobuf/cmake/CMakeFiles/libprotoc.dir/__/src/google/protobuf/compiler/java/java_enum_field_lite.cc.o",
+      "size": 0,
+      "magic": ""
+    },
+    {
+      "path": "/opt/thinktwice/src/pytorch-1.12.1/build/third_party/protobuf/cmake/CMakeFiles/libprotoc.dir/__/src/google/protobuf/compiler/java/java_extension.cc.o",
+      "size": 0,
+      "magic": ""
+    },
+    {
+      "path": "/opt/thinktwice/src/pytorch-1.12.1/build/third_party/protobuf/cmake/CMakeFiles/libprotoc.dir/__/src/google/protobuf/compiler/java/java_doc_comment.cc.o",
+      "size": 0,
+      "magic": ""
+    },
+    {
+      "path": "/opt/thinktwice/src/pytorch-1.12.1/build/third_party/protobuf/cmake/CMakeFiles/libprotoc.dir/__/src/google/protobuf/compiler/java/java_extension_lite.cc.o",
+      "size": 0,
+      "magic": ""
+    },
+    {
+      "path": "/opt/thinktwice/src/pytorch-1.12.1/build/third_party/protobuf/cmake/CMakeFiles/libprotoc.dir/__/src/google/protobuf/compiler/java/java_enum_field.cc.o",
+      "size": 0,
+      "magic": ""
+    },
+    {
+      "path": "/opt/thinktwice/src/pytorch-1.12.1/build/third_party/protobuf/cmake/CMakeFiles/libprotoc.dir/__/src/google/protobuf/compiler/java/java_context.cc.o",
+      "size": 0,
+      "magic": ""
+    },
+    {
+      "path": "/opt/thinktwice/src/pytorch-1.12.1/build/third_party/protobuf/cmake/CMakeFiles/libprotoc.dir/__/src/google/protobuf/compiler/java/java_enum_lite.cc.o",
+      "size": 0,
+      "magic": ""
+    },
+    {
+      "path": "/opt/thinktwice/src/pytorch-1.12.1/build/third_party/protobuf/cmake/CMakeFiles/libprotoc.dir/__/src/google/protobuf/compiler/java/java_enum.cc.o",
+      "size": 0,
+      "magic": ""
+    },
+    {
+      "path": "/opt/thinktwice/src/pytorch-1.12.1/build/third_party/protobuf/cmake/CMakeFiles/libprotoc.dir/__/src/google/protobuf/compiler/cpp/cpp_service.cc.o",
+      "size": 58352,
+      "magic": "00000000"
+    },
+    {
+      "path": "/opt/thinktwice/src/pytorch-1.12.1/build/third_party/protobuf/cmake/CMakeFiles/libprotoc.dir/__/src/google/protobuf/compiler/cpp/cpp_string_field.cc.o",
+      "size": 0,
+      "magic": ""
+    },
+    {
+      "path": "/opt/thinktwice/src/pytorch-1.12.1/build/third_party/protobuf/cmake/CMakeFiles/libprotoc.dir/__/src/google/protobuf/compiler/csharp/csharp_message.cc.o",
+      "size": 0,
+      "magic": ""
+    },
+    {
+      "path": "/opt/thinktwice/src/pytorch-1.12.1/build/third_party/protobuf/cmake/CMakeFiles/libprotoc.dir/__/src/google/protobuf/compiler/csharp/csharp_reflection_class.cc.o",
+      "size": 0,
+      "magic": ""
+    },
+    {
+      "path": "/opt/thinktwice/src/pytorch-1.12.1/build/third_party/protobuf/cmake/CMakeFiles/libprotoc.dir/__/src/google/protobuf/compiler/csharp/csharp_enum.cc.o",
+      "size": 0,
+      "magic": ""
+    },
+    {
+      "path": "/opt/thinktwice/src/pytorch-1.12.1/build/third_party/protobuf/cmake/CMakeFiles/libprotoc.dir/__/src/google/protobuf/compiler/csharp/csharp_primitive_field.cc.o",
+      "size": 0,
+      "magic": ""
+    },
+    {
+      "path": "/opt/thinktwice/src/pytorch-1.12.1/build/third_party/protobuf/cmake/CMakeFiles/libprotoc.dir/__/src/google/protobuf/compiler/csharp/csharp_field_base.cc.o",
+      "size": 0,
+      "magic": ""
+    },
+    {
+      "path": "/opt/thinktwice/src/pytorch-1.12.1/build/third_party/protobuf/cmake/CMakeFiles/libprotoc.dir/__/src/google/protobuf/compiler/csharp/csharp_doc_comment.cc.o",
+      "size": 0,
+      "magic": ""
+    },
+    {
+      "path": "/opt/thinktwice/src/pytorch-1.12.1/build/third_party/protobuf/cmake/CMakeFiles/libprotoc.dir/__/src/google/protobuf/compiler/csharp/csharp_message_field.cc.o",
+      "size": 0,
+      "magic": ""
+    },
+    {
+      "path": "/opt/thinktwice/src/pytorch-1.12.1/build/third_party/protobuf/cmake/CMakeFiles/libprotoc.dir/__/src/google/protobuf/compiler/csharp/csharp_repeated_enum_field.cc.o",
+      "size": 0,
+      "magic": ""
+    },
+    {
+      "path": "/opt/thinktwice/src/pytorch-1.12.1/build/third_party/protobuf/cmake/CMakeFiles/libprotoc.dir/__/src/google/protobuf/compiler/csharp/csharp_repeated_primitive_field.cc.o",
+      "size": 0,
+      "magic": ""
+    },
+    {
+      "path": "/opt/thinktwice/src/pytorch-1.12.1/build/third_party/protobuf/cmake/CMakeFiles/libprotoc.dir/__/src/google/protobuf/compiler/csharp/csharp_generator.cc.o",
+      "size": 0,
+      "magic": ""
+    },
+    {
+      "path": "/opt/thinktwice/src/pytorch-1.12.1/build/third_party/protobuf/cmake/CMakeFiles/libprotoc.dir/__/src/google/protobuf/compiler/csharp/csharp_repeated_message_field.cc.o",
+      "size": 0,
+      "magic": ""
+    },
+    {
+      "path": "/opt/thinktwice/src/pytorch-1.12.1/build/third_party/protobuf/cmake/CMakeFiles/libprotoc.dir/__/src/google/protobuf/compiler/csharp/csharp_source_generator_base.cc.o",
+      "size": 0,
+      "magic": ""
+    },
+    {
+      "path": "/opt/thinktwice/src/pytorch-1.12.1/build/third_party/protobuf/cmake/CMakeFiles/libprotoc.dir/__/src/google/protobuf/compiler/csharp/csharp_map_field.cc.o",
+      "size": 0,
+      "magic": ""
+    },
+    {
+      "path": "/opt/thinktwice/src/pytorch-1.12.1/build/third_party/protobuf/cmake/CMakeFiles/libprotoc.dir/__/src/google/protobuf/compiler/csharp/csharp_enum_field.cc.o",
+      "size": 0,
+      "magic": ""
+    },
+    {
+      "path": "/opt/thinktwice/src/pytorch-1.12.1/build/third_party/protobuf/cmake/CMakeFiles/libprotoc.dir/__/src/google/protobuf/compiler/csharp/csharp_wrapper_field.cc.o",
+      "size": 0,
+      "magic": ""
+    },
+    {
+      "path": "/opt/thinktwice/src/pytorch-1.12.1/build/third_party/protobuf/cmake/CMakeFiles/libprotoc.dir/__/src/google/protobuf/compiler/csharp/csharp_helpers.cc.o",
+      "size": 0,
+      "magic": ""
+    }
+  ]
+}

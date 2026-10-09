@@ -1,0 +1,52 @@
+{
+  "scope": "installed isolated candidate identity; hashes are local file identities",
+  "python": {
+    "executable": "/opt/thinktwice/conda/bin/python",
+    "version": "3.7.16"
+  },
+  "torch": {
+    "version": "1.12.1",
+    "path": "/opt/thinktwice/candidate-site/torch/__init__.py",
+    "cuda": "11.3",
+    "abi": true
+  },
+  "torchvision": {
+    "version": "0.13.1",
+    "path": "/opt/thinktwice/candidate-site/torchvision/__init__.py"
+  },
+  "mmcv": {
+    "version": "1.7.0",
+    "path": "/opt/thinktwice/candidate-site/mmcv/__init__.py"
+  },
+  "spconv": {
+    "version": "2.3.6",
+    "path": "/opt/thinktwice/conda/lib/python3.7/site-packages/spconv/__init__.py"
+  },
+  "libraries": [
+    {
+      "path": "/opt/thinktwice/candidate-site/torch/lib/libtorch_cuda.so",
+      "bytes": 310286504,
+      "sha256": "ce89a629b94ee4847849f180de2ce4b5e6fe56b20c4be360bede046617191c0b"
+    },
+    {
+      "path": "/opt/thinktwice/candidate-site/torchvision/_C.so",
+      "bytes": 45790544,
+      "sha256": "0d5270491e2bbfb59eab29dfc820b141476dca231862eb0361ceb215b93bd61e"
+    },
+    {
+      "path": "/opt/thinktwice/candidate-site/mmcv/_ext.cpython-37m-x86_64-linux-gnu.so",
+      "bytes": 88510320,
+      "sha256": "6a4fefc4ee3b18479f787932b9ecb3a3f55d715e7ebc52c01b69c7f918b821aa"
+    },
+    {
+      "path": "/opt/thinktwice/mesa24-triangle-fix-v2/lib/dri/swrast_dri.so",
+      "bytes": 111524344,
+      "sha256": "94410eaf19a0a9aa9de645736ffb6cba0d5b55c265d8e11ad343a6384db8d12b"
+    },
+    {
+      "path": "/mnt/d/Desktop/\u7aef\u5230\u7aef\u81ea\u52a8\u9a7e\u9a76\u5f00\u6e90\u6a21\u578b\u8c03\u7814/thinktwice.pth",
+      "bytes": 515776025,
+      "sha256": "6c86b4ad020cb4b5b67d77929d884a878172a5dc56bd8103ff614f68a828d1b5"
+    }
+  ]
+}

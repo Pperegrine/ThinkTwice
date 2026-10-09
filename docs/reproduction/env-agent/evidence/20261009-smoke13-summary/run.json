@@ -1,0 +1,192 @@
+{
+  "scope": "one original route16 Town05, full five refinements and original controls",
+  "command": [
+    "/opt/thinktwice/conda/bin/python",
+    "-u",
+    "-X",
+    "faulthandler",
+    "/mnt/d/Desktop/\u7aef\u5230\u7aef\u81ea\u52a8\u9a7e\u9a76\u5f00\u6e90\u6a21\u578b\u8c03\u7814/.thinktwice-runtime/launch/20261009-smoke-v5/leaderboard_evaluator_wsl.py",
+    "--scenarios=/mnt/d/Desktop/\u7aef\u5230\u7aef\u81ea\u52a8\u9a7e\u9a76\u5f00\u6e90\u6a21\u578b\u8c03\u7814/ThinkTwice/leaderboard/data/scenarios/all_towns_traffic_scenarios_no256.json",
+    "--routes=/mnt/d/Desktop/\u7aef\u5230\u7aef\u81ea\u52a8\u9a7e\u9a76\u5f00\u6e90\u6a21\u578b\u8c03\u7814/.thinktwice-runtime/launch/20261009-smoke-v5/routes_town05_single.xml",
+    "--repetitions=1",
+    "--track=SENSORS",
+    "--checkpoint=/mnt/d/Desktop/\u7aef\u5230\u7aef\u81ea\u52a8\u9a7e\u9a76\u5f00\u6e90\u6a21\u578b\u8c03\u7814/.thinktwice-runtime/runs/20261009-smoke13-cleanup-final/results.json",
+    "--agent=/mnt/d/Desktop/\u7aef\u5230\u7aef\u81ea\u52a8\u9a7e\u9a76\u5f00\u6e90\u6a21\u578b\u8c03\u7814/ThinkTwice/docs/reproduction/env-agent/scripts/thinktwice_observed_agent.py",
+    "--agent-config=/mnt/d/Desktop/\u7aef\u5230\u7aef\u81ea\u52a8\u9a7e\u9a76\u5f00\u6e90\u6a21\u578b\u8c03\u7814/thinktwice.pth+/mnt/d/Desktop/\u7aef\u5230\u7aef\u81ea\u52a8\u9a7e\u9a76\u5f00\u6e90\u6a21\u578b\u8c03\u7814/ThinkTwice/open_loop_training/configs/thinktwice.py",
+    "--debug=0",
+    "--record=",
+    "--resume=False",
+    "--host=127.0.0.1",
+    "--port=22023",
+    "--trafficManagerPort=22033",
+    "--is_local=True",
+    "--is_eval=True"
+  ],
+  "gates": {
+    "basics": {
+      "path": "/mnt/d/Desktop/\u7aef\u5230\u7aef\u81ea\u52a8\u9a7e\u9a76\u5f00\u6e90\u6a21\u578b\u8c03\u7814/ThinkTwice/docs/reproduction/env-agent/evidence/20261009-takeover/linux-basics-candidate01.json",
+      "sha256": "a6f416500aec0f3a409f18ac227ddd5b6836ddee31b0d3f28b09e590ae423621"
+    },
+    "deform": {
+      "path": "/mnt/d/Desktop/\u7aef\u5230\u7aef\u81ea\u52a8\u9a7e\u9a76\u5f00\u6e90\u6a21\u578b\u8c03\u7814/ThinkTwice/docs/reproduction/env-agent/evidence/20261009-takeover/candidate-deform-01.json",
+      "sha256": "ab1b2293bbd18326f2fc60d0782670a5a5da051ef79426b38ff6a48bba682347"
+    },
+    "dcn": {
+      "path": "/mnt/d/Desktop/\u7aef\u5230\u7aef\u81ea\u52a8\u9a7e\u9a76\u5f00\u6e90\u6a21\u578b\u8c03\u7814/ThinkTwice/docs/reproduction/env-agent/evidence/20261009-takeover/candidate-dcn-01.json",
+      "sha256": "36feb97c7906b8372fc95d2b953a036c0c04e5e53fca6a88a306aa688f00e4e5"
+    },
+    "spconv": {
+      "path": "/mnt/d/Desktop/\u7aef\u5230\u7aef\u81ea\u52a8\u9a7e\u9a76\u5f00\u6e90\u6a21\u578b\u8c03\u7814/ThinkTwice/docs/reproduction/env-agent/evidence/20261009-takeover/candidate-spconv-01.json",
+      "sha256": "fa879fa4750c14a3023924c1a6968ace9ea196dce6e2be67c506f28c1a5c3edc"
+    },
+    "voxel": {
+      "path": "/mnt/d/Desktop/\u7aef\u5230\u7aef\u81ea\u52a8\u9a7e\u9a76\u5f00\u6e90\u6a21\u578b\u8c03\u7814/ThinkTwice/docs/reproduction/env-agent/evidence/20261009-takeover/candidate-voxel-01.json",
+      "sha256": "19dd985755f4da88686885edc510d0b6f8a1488fb3aa4d0e05744450d0048b0e"
+    },
+    "lidar": {
+      "path": "/mnt/d/Desktop/\u7aef\u5230\u7aef\u81ea\u52a8\u9a7e\u9a76\u5f00\u6e90\u6a21\u578b\u8c03\u7814/ThinkTwice/docs/reproduction/env-agent/evidence/20261009-takeover/candidate-lidar-stack02-metadata.json",
+      "sha256": "32e76ea6d09df410d75afe7512032457e26b702ee8627d8d2af457ef5939950d"
+    },
+    "identity": {
+      "path": "/mnt/d/Desktop/\u7aef\u5230\u7aef\u81ea\u52a8\u9a7e\u9a76\u5f00\u6e90\u6a21\u578b\u8c03\u7814/ThinkTwice/docs/reproduction/env-agent/evidence/20261009-takeover/extensions-candidate-identity01.json",
+      "sha256": "a9faeb25c7f6d1d1cb31d88f08de42baf4ed011af6e4439023c6a27475bc0626"
+    },
+    "model": {
+      "path": "/mnt/d/Desktop/\u7aef\u5230\u7aef\u81ea\u52a8\u9a7e\u9a76\u5f00\u6e90\u6a21\u578b\u8c03\u7814/ThinkTwice/docs/reproduction/env-agent/evidence/20261009-takeover/candidate-model-gpu01.json",
+      "sha256": "5fab1bf6458e2c8c347f8991ced63d212c9ce7370774287788dc416cf90673fd"
+    },
+    "real_batch_replay": {
+      "path": "/mnt/d/Desktop/\u7aef\u5230\u7aef\u81ea\u52a8\u9a7e\u9a76\u5f00\u6e90\u6a21\u578b\u8c03\u7814/ThinkTwice/docs/reproduction/env-agent/evidence/20261009-takeover/real-batch-replay01.json",
+      "sha256": "674dcb48848689bedb349d85a3df41f0434f2e28c6a68519debf940013f4253d",
+      "current_cuda_library_sha256": "ce89a629b94ee4847849f180de2ce4b5e6fe56b20c4be360bede046617191c0b"
+    }
+  },
+  "started": 1791553215.6309428,
+  "pass": false,
+  "torch": {
+    "version": "1.12.1",
+    "path": "/opt/thinktwice/candidate-site/torch/__init__.py"
+  },
+  "server_pid": 88,
+  "returncode": 0,
+  "finished": 1791553785.1415484,
+  "evaluation": {
+    "_checkpoint": {
+      "global_record": {
+        "index": -1,
+        "infractions": {
+          "collisions_layout": 0.0,
+          "collisions_pedestrian": 0.0,
+          "collisions_vehicle": 0.0,
+          "outside_route_lanes": 0.0,
+          "red_light": 0.0,
+          "route_dev": 0.0,
+          "route_timeout": 0.0,
+          "stop_infraction": 0.0,
+          "vehicle_blocked": 0.0
+        },
+        "meta": {
+          "exceptions": [
+            [
+              "RouteScenario_16",
+              0,
+              "Failed"
+            ]
+          ]
+        },
+        "route_id": -1,
+        "scores": {
+          "score_composed": 2.339751159903489,
+          "score_penalty": 1.0,
+          "score_route": 2.339751159903489
+        },
+        "status": "Failed"
+      },
+      "progress": [
+        1,
+        1
+      ],
+      "records": [
+        {
+          "index": 0,
+          "infractions": {
+            "collisions_layout": [],
+            "collisions_pedestrian": [],
+            "collisions_vehicle": [],
+            "outside_route_lanes": [],
+            "red_light": [],
+            "route_dev": [],
+            "route_timeout": [],
+            "stop_infraction": [],
+            "vehicle_blocked": []
+          },
+          "meta": {
+            "duration_game": 11.700000174343586,
+            "duration_system": 453.19966983795166,
+            "folder_name": "routes_town05_single_10_09_21_41_33_index0_0",
+            "route_length": 1071.0281341479306,
+            "total_steps": 233
+          },
+          "route_id": "RouteScenario_16",
+          "scores": {
+            "score_composed": 2.339751159903489,
+            "score_penalty": 1.0,
+            "score_route": 2.339751159903489
+          },
+          "status": "Failed"
+        }
+      ]
+    },
+    "eligible": true,
+    "entry_status": "Finished",
+    "labels": [
+      "Avg. driving score",
+      "Avg. route completion",
+      "Avg. infraction penalty",
+      "Collisions with pedestrians",
+      "Collisions with vehicles",
+      "Collisions with layout",
+      "Red lights infractions",
+      "Stop sign infractions",
+      "Off-road infractions",
+      "Route deviations",
+      "Route timeouts",
+      "Agent blocked"
+    ],
+    "sensors": [
+      "carla_camera",
+      "carla_camera",
+      "carla_camera",
+      "carla_camera",
+      "carla_lidar",
+      "carla_imu",
+      "carla_gnss",
+      "carla_speedometer",
+      "carla_camera"
+    ],
+    "values": [
+      "2.340",
+      "2.340",
+      "1.000",
+      "0.000",
+      "0.000",
+      "0.000",
+      "0.000",
+      "0.000",
+      "0.000",
+      "0.000",
+      "0.000",
+      "0.000"
+    ]
+  },
+  "route_statuses": [
+    "Failed"
+  ],
+  "route_progress": [
+    2.339751159903489
+  ],
+  "sensor_gate": true,
+  "inference_calls": 203,
+  "controls_valid": true,
+  "failures": []
+}

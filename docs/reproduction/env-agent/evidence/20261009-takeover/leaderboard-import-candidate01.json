@@ -1,0 +1,19 @@
+{
+  "scope": "import only; no route or sensor inference",
+  "pass": true,
+  "modules": [
+    {
+      "name": "leaderboard.leaderboard_evaluator",
+      "path": "/mnt/d/Desktop/\u7aef\u5230\u7aef\u81ea\u52a8\u9a7e\u9a76\u5f00\u6e90\u6a21\u578b\u8c03\u7814/ThinkTwice/leaderboard/leaderboard/leaderboard_evaluator.py"
+    },
+    {
+      "name": "team_code.thinktwice_agent",
+      "path": "/mnt/d/Desktop/\u7aef\u5230\u7aef\u81ea\u52a8\u9a7e\u9a76\u5f00\u6e90\u6a21\u578b\u8c03\u7814/ThinkTwice/leaderboard/team_code/thinktwice_agent.py"
+    },
+    {
+      "name": "thinktwice_observed_agent",
+      "path": "/mnt/d/Desktop/\u7aef\u5230\u7aef\u81ea\u52a8\u9a7e\u9a76\u5f00\u6e90\u6a21\u578b\u8c03\u7814/ThinkTwice/docs/reproduction/env-agent/scripts/thinktwice_observed_agent.py"
+    }
+  ],
+  "overlay_python37_syntax": true
+}

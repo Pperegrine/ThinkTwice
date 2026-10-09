@@ -1,0 +1,9 @@
+{
+  "pass": true,
+  "time": 1791553811.487218,
+  "scope": "read-only dedicated ThinkTwice-Focal process inventory",
+  "remaining_smoke_processes": [],
+  "project_volume_available_bytes": 273231343616,
+  "evaluator_returncode": 0,
+  "bounded_smoke_pass": true
+}
