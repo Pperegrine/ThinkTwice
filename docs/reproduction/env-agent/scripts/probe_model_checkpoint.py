@@ -17,8 +17,8 @@ repo = root / 'ThinkTwice'
 os.chdir(str(repo))
 sys.path.insert(0, str(repo))
 sys.path.insert(0, str(repo / 'open_loop_training'))
-sys.path.insert(0, os.environ.get('THINKTWICE_VOXEL_ROOT', '/opt/thinktwice/build'))
-r = {'scope': 'CPU model/key/shape only; not CUDA inference', 'pass': False}
+sys.path.insert(0, os.environ.get('THINKTWICE_VOXEL_ROOT', '/opt/thinktwice/voxel-candidate'))
+r = {'scope': 'model/key/shape on %s; not real sensor inference' % a.device, 'pass': False}
 try:
     import torch
     r['torch'] = {'version': torch.__version__, 'path': torch.__file__, 'abi': torch._C._GLIBCXX_USE_CXX11_ABI}

@@ -1,9 +1,16 @@
 """Record installed candidate identity without launching new GPU kernels."""
+import argparse
 import hashlib
 import json
 from pathlib import Path
 import platform
 import sys
+parser = argparse.ArgumentParser(description=__doc__)
+parser.add_argument('--output', required=True)
+args = parser.parse_args()
+output = Path(args.output).resolve()
+assert not output.exists(), 'Preserve existing identity evidence'
+
 import torch
 import torchvision
 import mmcv
@@ -24,7 +31,5 @@ report = {'scope': 'installed isolated candidate identity; hashes are local file
           'spconv': {'version': spconv.__version__, 'path': spconv.__file__},
           'libraries': [{'path': str(p), 'bytes': p.stat().st_size,
                          'sha256': hashlib.sha256(p.read_bytes()).hexdigest()} for p in paths]}
-output = root / 'ThinkTwice/docs/reproduction/env-agent/evidence/20261009-takeover/final-installed-identities.json'
-assert not output.exists()
 output.write_text(json.dumps(report, indent=2))
 print(json.dumps(report, indent=2), flush=True)

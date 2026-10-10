@@ -1,11 +1,15 @@
 """Formal final candidate extension identities, separate from old split builds."""
+import argparse
 import hashlib
 import json
 from pathlib import Path
 import subprocess
 
-root = Path(__file__).resolve().parents[5]
-out = root / 'ThinkTwice/docs/reproduction/env-agent/evidence/20261009-takeover'
+parser = argparse.ArgumentParser(description=__doc__)
+parser.add_argument('--output-dir', required=True)
+args = parser.parse_args()
+out = Path(args.output_dir).resolve()
+out.mkdir(parents=True, exist_ok=False)
 files = [Path('/opt/thinktwice/voxel-candidate/ops/voxel_pooling/voxel_pooling_ext.cpython-37m-x86_64-linux-gnu.so'),
          Path('/opt/thinktwice/candidate-site/mmcv/_ext.cpython-37m-x86_64-linux-gnu.so'),
          Path('/opt/thinktwice/candidate-site/torchvision/_C.so')]

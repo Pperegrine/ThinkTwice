@@ -19,7 +19,7 @@ output = Path(a.output).resolve()
 root = Path(__file__).resolve().parents[5]
 repo = root / 'ThinkTwice'
 os.chdir(str(repo))
-sys.path[:0] = [os.environ.get('THINKTWICE_VOXEL_ROOT', '/opt/thinktwice/build'), str(repo), str(repo / 'open_loop_training')]
+sys.path[:0] = [os.environ.get('THINKTWICE_VOXEL_ROOT', '/opt/thinktwice/voxel-candidate'), str(repo), str(repo / 'open_loop_training')]
 r = {'scope': 'synthetic complete official LiDAR CUDA stack, not real sensors', 'pass': False}
 try:
     import numpy as np

@@ -1,11 +1,18 @@
 """Read-only final verification of this dedicated distro after bounded smoke."""
+import argparse
 import json
 import os
 from pathlib import Path
 import time
 
 root = Path(__file__).resolve().parents[5]
-run = root / '.thinktwice-runtime/runs/20261009-smoke13-cleanup-final'
+parser = argparse.ArgumentParser(description=__doc__)
+parser.add_argument('--run-dir', required=True)
+parser.add_argument('--output', required=True)
+args = parser.parse_args()
+run = Path(args.run_dir).resolve()
+target = Path(args.output).resolve()
+assert not target.exists(), 'Preserve existing verification'
 acceptance = json.loads((run / 'smoke-acceptance.json').read_text())
 raw = json.loads((run / 'run.json').read_text())
 assert acceptance['pass'] and raw['returncode'] == 0 and not raw.get('server_abort')
@@ -27,8 +34,6 @@ report = {'pass': not remaining, 'time': time.time(),
           'remaining_smoke_processes': remaining,
           'project_volume_available_bytes': disk.f_bavail * disk.f_frsize,
           'evaluator_returncode': raw['returncode'], 'bounded_smoke_pass': acceptance['pass']}
-target = run / 'cleanup-verification.json'
-assert not target.exists(), 'Preserve existing verification'
 target.write_text(json.dumps(report, indent=2))
 print(json.dumps(report, indent=2), flush=True)
 raise SystemExit(0 if report['pass'] else 1)
